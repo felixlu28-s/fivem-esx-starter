@@ -1,0 +1,26 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/*.log
+.codex-log/
+node_modules/
+
+# FXServer binaries and downloaded runtime files
+/server/
+server-data/.replxx_history
+server-data/cache/
+server-data/logs/
+server-data/txData/
+server-data/db/
+server-data/resources/\[core\]/*
+server-data/resources/\[esx\]/*
+
+# Local server configuration and generated NUI output
+server-data/server.cfg
+server-data/resources/\[custom\]/rp_ui/web/dist/
+
+# Local development and archive files
+*.log
+*.zip
