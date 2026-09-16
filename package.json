@@ -1,0 +1,22 @@
+{
+  "name": "fivem-esx-starter",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "server-data/resources/*/rp_ui/web"
+  ],
+  "scripts": {
+    "resource:new": "node tools/create-resource.mjs",
+    "check:resources": "node tools/check-resources.mjs",
+    "ui:dev": "npm run dev --workspace @rp/ui",
+    "ui:typecheck": "npm run typecheck --workspace @rp/ui",
+    "ui:build": "npm run build --workspace @rp/ui",
+    "check": "npm run check:resources && npm run ui:typecheck"
+  },
+  "devDependencies": {
+    "luaparse": "0.3.1"
+  }
+}
