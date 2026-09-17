@@ -94,3 +94,13 @@ Mehr dazu steht in [`docs/codex-workflow.md`](docs/codex-workflow.md).
 ## Leitidee
 
 Das Repository bleibt **ein Projekt**, aber FiveM startet mehrere **deploybare Domain-Module**. Damit kannst du einzelne Systeme neu starten und sauber testen, ohne in 100 Mini-Resources oder einem unwartbaren Monolithen zu enden.
+
+
+## Server starten
+
+```bash
+docker compose up -d db
+
+Set-Location C:\Users\HighEndGamingPCUkrai\Desktop\fivem-esx-starter\server-data
+..\server\FXServer.exe +exec server.cfg
+```
