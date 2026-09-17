@@ -21,6 +21,7 @@ server_scripts {
 
 dependencies {
     'es_extended',
+    'skinchanger',
     'ox_lib',
     'oxmysql',
 }

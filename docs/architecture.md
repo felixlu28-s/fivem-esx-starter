@@ -51,15 +51,19 @@ NetEvents sind keine Berechtigungsgrenze. Jeder vom Client erreichbare Handler v
 
 ## Startreihenfolge
 
-1. `oxmysql`
-2. `ox_lib`
-3. `es_extended`
-4. offizielle beziehungsweise ausgewählte ESX-Resources
-5. `rp_core`
+1. `spawnmanager`, `baseevents`
+2. `oxmysql`, `ox_lib`
+3. `esx_lib`, `es_extended`, `skinchanger` (zusammenpassende ESX-Version)
+4. `rp_core`
+5. `rp_characters`
 6. `rp_ui`
-7. weitere `rp_`-Resources
+7. weitere `rp_`-Resources in Abhängigkeitsreihenfolge
 
 Jede Resource deklariert ihre direkten Abhängigkeiten zusätzlich im `fxmanifest.lua`.
+
+ESX besitzt derzeit den Single-Character-Login: `esx:onPlayerJoined` → Datenbank → `esx:playerLoaded` → `skinchanger:loadSkin` → Spawn → Ladebildschirm schließen. `rp_core` aktiviert keinen eigenen Auto-Spawn. `skinchanger` muss installiert und gestartet sein, da ESX auf dessen Callback wartet.
+
+Die bisherige Charakter-NUI ist ein Prototyp nach dem ESX-Login. Ihre Callback-Brücke liegt noch in `rp_ui`, deshalb hängt `rp_ui` derzeit zusätzlich von `rp_characters` ab. Vor weiteren Domains sollte die Brücke in die Domain verlagert werden, damit die angestrebte Richtung Domain → `rp_ui` erreicht wird. Keine Gegenabhängigkeit hinzufügen, solange diese Brücke besteht.
 
 ## Datenbank
 

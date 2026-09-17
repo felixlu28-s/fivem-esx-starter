@@ -16,7 +16,8 @@ Ein Codex-freundliches Monorepo für einen eigenen FiveM-RP-Server mit:
 - Git
 - Node.js 22 oder neuer und npm
 - Docker mit Compose oder eine vorhandene MariaDB-Instanz
-- ESX Legacy, ox_lib und oxmysql
+- ESX Legacy einschließlich `esx_lib` und `skinchanger`, ox_lib und oxmysql
+- Cfx-Systemresources `spawnmanager` und `baseevents`
 
 Die Fremd-Ressourcen werden bewusst nicht mitgeliefert. Installiere sie aus ihren offiziellen Repositories beziehungsweise über ein aktuelles txAdmin-Rezept, damit Updates nachvollziehbar bleiben.
 
@@ -35,10 +36,11 @@ cp server-data/server.cfg.example server-data/server.cfg
 Danach:
 
 1. Trage Datenbankpasswort, Servername, Lizenzschlüssel und Endpoints in `.env` beziehungsweise `server-data/server.cfg` ein.
-2. Lege ESX Legacy unter `server-data/resources/[esx]/` ab.
-3. Lege `ox_lib` und `oxmysql` unter `server-data/resources/[core]/` ab.
+2. Lege `es_extended` und `skinchanger` aus derselben ESX-Legacy-Version unter `server-data/resources/[esx]/` ab; `esx_lib` kommt unter `[core]/`.
+3. Lege `ox_lib` und `oxmysql` unter `server-data/resources/[core]/` und die Cfx-Systemresources `spawnmanager` und `baseevents` unter `[system]/` ab.
 4. Importiere die offiziellen ESX-SQL-Dateien in die Datenbank.
-5. Starte FXServer mit `+exec server.cfg` aus dem Ordner `server-data`.
+5. Importiere `server-data/resources/[custom]/rp_characters/migrations/001_create_characters.sql`.
+6. Prüfe die lokale Installation mit `npm run check:runtime` und starte FXServer mit `+exec server.cfg` aus dem Ordner `server-data`.
 
 `server.cfg` ist absichtlich ignoriert, damit Lizenzschlüssel und lokale Zugangsdaten nicht committed werden.
 
@@ -70,6 +72,7 @@ npm run resource:new -- rp_vehicles
 npm run ui:dev
 npm run ui:build
 npm run check
+npm run check:runtime
 ```
 
 Der Resource-Generator akzeptiert ausschließlich Namen im Format `rp_name` und erzeugt ein Manifest sowie getrennte Client-, Server- und Shared-Dateien.
@@ -90,6 +93,8 @@ liefere zuerst konkrete Findings mit Dateiverweisen und einem Fixplan.
 ```
 
 Mehr dazu steht in [`docs/codex-workflow.md`](docs/codex-workflow.md).
+
+Den geprüften Projektstand, offene Anforderungen und die Diagnose zu „Awaiting scripts“ beschreibt [`docs/project-status.md`](docs/project-status.md).
 
 ## Leitidee
 

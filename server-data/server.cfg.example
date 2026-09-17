@@ -13,11 +13,16 @@ set onesync on
 
 set mysql_connection_string "mysql://fivem:CHANGE_ME@127.0.0.1:3306/fivem?charset=utf8mb4"
 
+ensure spawnmanager
+ensure baseevents
 ensure oxmysql
 ensure ox_lib
+ensure esx_lib
 ensure es_extended
+ensure skinchanger
 
-# Add selected ESX resources here in explicit order.
+# ESX owns the single-character login and spawn flow. skinchanger is required.
+# Add selected ESX resources here in explicit order; do not enable a second spawn flow.
 
 ensure rp_core
 ensure rp_characters

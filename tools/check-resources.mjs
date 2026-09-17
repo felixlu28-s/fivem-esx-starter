@@ -32,7 +32,12 @@ for (const resourceName of await readdir(resourcesRoot)) {
     if (!manifest.includes(required)) failures.push(`${resourceName}: manifest is missing ${required}`);
   }
 
-  if (/RegisterNetEvent\(['\"](?!rp_)/.test(await readResourceLua(join(resourcesRoot, resourceName)))) {
+  const resourceLua = await readResourceLua(join(resourcesRoot, resourceName));
+  if (/\bMySQL\./.test(resourceLua) && !manifest.includes('@oxmysql/lib/MySQL.lua')) {
+    failures.push(`${resourceName}: MySQL usage requires @oxmysql/lib/MySQL.lua in server_scripts`);
+  }
+
+  if (/RegisterNetEvent\(['\"](?!rp_)/.test(resourceLua)) {
     failures.push(`${resourceName}: found a RegisterNetEvent that is not prefixed with rp_`);
   }
 }
