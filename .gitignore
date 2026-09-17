@@ -16,6 +16,7 @@ server-data/txData/
 server-data/db/
 server-data/resources/\[core\]/*
 server-data/resources/\[esx\]/*
+server-data/resources/\[system\]/*
 
 # Local server configuration and generated NUI output
 server-data/server.cfg
