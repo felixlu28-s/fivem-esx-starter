@@ -1,0 +1,9 @@
+Damit txAdmin bei deiner Windows-Anmeldung automatisch startet:
+start-txadmin.cmd setzt TXHOST_DATA_PATH auf den bestehenden Ordner server-data\txData.
+Die Einstellung gilt nur für diesen Startprozess; Profile und Daten bleiben im bisherigen Ordner.
+Nach einer Änderung txAdmin vollständig beenden und über start-txadmin.cmd erneut starten.
+Referenz: https://aka.cfx.re/txadmin-env-config
+1. Win + R drücken und shell:startup eingeben.
+2. Eine Verknüpfung zu start-txadmin.cmd in diesen Ordner legen.
+3. Optional in den Eigenschaften der Verknüpfung „Ausführen: Minimiert“ einstellen. Windows-Autostart
+Für dauerhafte Erreichbarkeit muss dein PC eingeschaltet bleiben und darf nicht in den Energiesparmodus wechseln. Zum Starten deines ESX-Servers muss außerdem Docker/MariaDB laufen.

@@ -13,6 +13,8 @@
     "check:resources": "node tools/check-resources.mjs",
     "check:runtime": "node tools/check-runtime.mjs",
     "ui:dev": "npm run dev --workspace @rp/ui",
+    "ui:preview": "npm run dev --workspace @rp/ui -- --host 127.0.0.1 --port 5173 --strictPort --open /",
+    "ui:loading": "npm run dev --workspace @rp/ui -- --host 127.0.0.1 --port 5173 --strictPort --open /loading.html?preview=1",
     "ui:typecheck": "npm run typecheck --workspace @rp/ui",
     "ui:build": "npm run build --workspace @rp/ui",
     "check": "npm run check:resources && npm run ui:typecheck"

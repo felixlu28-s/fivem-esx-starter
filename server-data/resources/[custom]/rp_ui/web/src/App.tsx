@@ -1,128 +1,241 @@
-import { FormEvent, useEffect, useState } from 'react';
-import { fetchNui, isBrowser, isNuiMessage, type Character, type CharacterResponse, type NuiOpenPayload } from './lib/nui';
+import { useEffect, useRef, useState } from "react";
+import { useMenuToggle } from "./lib/menuToggle";
+import { UiIcon } from "./components/UiIcon";
+import {
+  fetchNui,
+  isBrowser,
+  isNuiMessage,
+  parseCharacters,
+  parseBindings,
+  parseProfile,
+  parseInteraction,
+  type InteractionHint,
+  type NuiOpenPayload,
+} from "./lib/nui";
+import { preview } from "./lib/preview";
+import { Characters } from "./views/Characters";
+import { Settings } from "./views/Settings";
+import { Me } from "./views/Me";
+import { Organizations } from "./views/Organizations";
+import { organizationPreview } from "./lib/organizationPreview";
+import { parseOrganizations } from "./lib/organizations";
+import { loadBindingPreview, profilePreview } from "./lib/menuPreview";
+import { Inventory } from "./views/Inventory";
+import { inventoryPreview } from "./lib/inventoryPreview";
+import { parseInventory } from "./lib/inventory";
+import { parseCommerce } from "./lib/commerce";
+import { commercePreview } from "./lib/commercePreview";
+import { CommerceView } from "./views/Commerce";
+import { ClothingView } from "./views/Clothing";
+import { clothingPreview } from "./lib/clothingPreview";
+import { BankingView } from "./views/Banking";
+import { bankPreview, parseBanking } from "./lib/banking";
+import { NativeMenu } from "./views/NativeMenu";
+import { parseNativeMenu } from "./lib/nativeui";
+import { nativePreview } from "./lib/nativePreview";
+import { InteractionPrompt } from "./components/InteractionPrompt";
+import { GameHud } from "./components/GameHud";
+import { Phone } from "./views/Phone";
+import { hudPreview, parseHud, type HudData } from "./lib/hud";
 
-const browserPreview: NuiOpenPayload = {
-  view: 'welcome',
-  payload: {
-    title: 'FiveM ESX Starter',
-    message: 'React, TypeScript und die zentrale NUI sind bereit.',
-  },
-};
-
-const isCharacter = (value: unknown): value is Character => {
-  if (!value || typeof value !== 'object') return false;
-  const character = value as Record<string, unknown>;
-  return typeof character.id === 'number' && typeof character.firstname === 'string'
-    && typeof character.lastname === 'string' && typeof character.dateofbirth === 'string'
-    && (character.gender === 'm' || character.gender === 'f') && typeof character.height === 'number';
-};
+function browserScreen(): NuiOpenPayload {
+  const view = new URLSearchParams(location.search).get("view");
+  if (view === 'banking' || view === 'atm-maze' || view === 'atm-liberty') return {view:'banking',locked:false,payload:{...bankPreview(view==='atm-maze'?'maze':view==='atm-liberty'?'liberty':'fleeca')}};
+  if (view === "clothing") return { view, locked: false, payload: { ...clothingPreview() } };
+  if (view === "phone") return { view, locked: true, payload: {} };
+  const keyFor = (action: string) => loadBindingPreview().actions.find((a) => a.id === action)?.key;
+  if (view === "hud") return { view, locked: false, payload: { ...hudPreview } };
+  if (view === "interaction") return { view, locked: false, payload: {
+    label: "24/7 · Strawberry", verb: "Einkaufen", key: "E", icon: "shop",
+  } };
+  if (view === "nativeui" || view === "weaponshop" || view === "admin" || view === "garage" || view === "garage-dev")
+    return { view: "nativeui", payload: { ...nativePreview() }, locked: true, toggleKey: view === "admin" ? keyFor("rp_admin:open") : undefined };
+  if (view === "shop" || view === "crafting")
+    return {
+      view: "commerce",
+      toggleKey: keyFor("rp_commerce:interact"),
+      payload: { ...commercePreview(view) },
+      locked: false,
+    };
+  if (view === "inventory")
+    return { view, payload: { ...inventoryPreview() }, locked: false, toggleKey: keyFor("rp_inventory:open") };
+  if (view === "organizations")
+    return { view, payload: { ...organizationPreview }, locked: false };
+  if (view === "settings") {
+    return { view, payload: { ...loadBindingPreview() }, locked: true };
+  }
+  if (view === "me")
+    return { view, payload: { ...profilePreview }, locked: false, toggleKey: keyFor("rp_player:me") };
+  if (view === "welcome")
+    return {
+      view,
+      payload: {
+        title: "Willkommen in Los Santos",
+        message: "Eine gemeinsame Oberfläche für dein Rollenspiel.",
+      },
+      locked: false,
+    };
+  if (view === "creator" || view === "loading" || view === "error")
+    return {
+      view: "characters",
+      locked: true,
+      payload: {
+        ...preview,
+        mode: view,
+        ...(view === "error" ? { error: "login_failed" } : {}),
+      },
+    };
+  return { view: "characters", payload: { ...preview }, locked: true };
+}
 
 export function App() {
-  const [screen, setScreen] = useState<NuiOpenPayload | null>(isBrowser() ? browserPreview : null);
-  const [characters, setCharacters] = useState<Character[]>([]);
-  const [error, setError] = useState('');
-
+  return <><GameApp /><Phone /></>;
+}
+function GameApp() {
+  const closing = useRef(false);
+  const [hud, setHud] = useState<HudData | null>(null);
+  const [interaction, setInteraction] = useState<InteractionHint | null>(null);
+  const [screen, setScreen] = useState<NuiOpenPayload | null>(
+    isBrowser() ? browserScreen() : null,
+  );
   useEffect(() => {
-    const onMessage = (event: MessageEvent<unknown>) => {
+    if (isBrowser() && window.parent !== window) {
+      window.parent.postMessage(
+        { action: "studio:visibility", visible: screen !== null },
+        window.location.origin,
+      );
+    }
+  }, [screen]);
+  useEffect(() => {
+    const listener = (event: MessageEvent<unknown>) => {
       if (!isNuiMessage(event.data)) return;
-
-      if (event.data.action === 'ui:close') {
-        setScreen(null);
+      if (event.data.action === "ui:phone" || event.data.action === "ui:phoneApp") return;
+      if (event.data.action === "ui:hud") {
+        setHud(event.data.data || null);
         return;
       }
-
-      setScreen(event.data.data);
-      if (event.data.data.view === 'characters') {
-        const incoming = event.data.data.payload.characters;
-        setCharacters(Array.isArray(incoming) ? incoming.filter(isCharacter) : []);
+      if (event.data.action === "ui:interaction") {
+        setInteraction(event.data.data || null);
+        return;
       }
+      setScreen(event.data.action === "ui:close" ? null : event.data.data);
     };
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && screen) void close();
+    window.addEventListener("message", listener);
+    void fetchNui("ui:ready").catch(() => undefined);
+    return () => window.removeEventListener("message", listener);
+  }, []);
+  useEffect(() => {
+    const listener = (event: KeyboardEvent) => {
+      if (
+        event.key === "Escape" &&
+        !event.repeat &&
+        !event.defaultPrevented &&
+        screen &&
+        !screen.locked
+      )
+        void close();
     };
-
-    window.addEventListener('message', onMessage);
-    window.addEventListener('keydown', onKeyDown);
-
-    return () => {
-      window.removeEventListener('message', onMessage);
-      window.removeEventListener('keydown', onKeyDown);
-    };
+    window.addEventListener("keydown", listener);
+    return () => window.removeEventListener("keydown", listener);
   }, [screen]);
-
   const close = async () => {
+    if (closing.current) return;
+    closing.current = true;
     try {
-      await fetchNui<{ ok: boolean }>('ui:close');
+      if ((await fetchNui("ui:close")).ok) setScreen(null);
+    } catch {
+      /* Keep focus until game acknowledges. */
     } finally {
-      setScreen(null);
+      closing.current = false;
     }
   };
-
-  const selectCharacter = async (id: number) => {
-    const result = await fetchNui<CharacterResponse>('rp_characters:select', { id });
-    if (!result.ok) setError(result.error ?? 'Auswahl fehlgeschlagen');
-  };
-
-  const createCharacter = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setError('');
-    const values = new FormData(event.currentTarget);
-    const result = await fetchNui<CharacterResponse>('rp_characters:create', {
-      firstname: values.get('firstname'), lastname: values.get('lastname'),
-      dateofbirth: values.get('dateofbirth'), gender: values.get('gender'), height: Number(values.get('height')),
-    });
-    if (result.ok && result.characters) {
-      setCharacters(result.characters);
-      event.currentTarget.reset();
-    } else {
-      setError(result.error ?? 'Charakter konnte nicht erstellt werden');
-    }
-  };
-
-  if (!screen) return null;
-
-  if (screen.view === 'characters') {
-    return (
-      <main className="overlay" aria-label="Charaktere">
-        <section className="character-panel">
-          <div className="panel-heading"><span className="eyebrow">Identität</span><button className="quiet-button" type="button" onClick={() => void close()}>Schließen</button></div>
-          <h1>Wer bist du heute?</h1>
-          <div className="character-layout">
-            <div className="character-list">
-              {characters.map((character) => (
-                <button className="character-item" type="button" key={character.id} onClick={() => void selectCharacter(character.id)}>
-                  <strong>{character.firstname} {character.lastname}</strong><span>{character.dateofbirth} · {character.height} cm</span>
-                </button>
-              ))}
-              {!characters.length && <p className="empty-state">Noch keine Charaktere angelegt.</p>}
-            </div>
-            <form className="create-form" onSubmit={(event) => void createCharacter(event)}>
-              <h2>Neuer Charakter</h2>
-              <input name="firstname" placeholder="Vorname" minLength={2} maxLength={32} required />
-              <input name="lastname" placeholder="Nachname" minLength={2} maxLength={32} required />
-              <input name="dateofbirth" type="date" min="1900-01-01" max="2020-12-31" required />
-              <div className="form-row"><select name="gender" defaultValue="m"><option value="m">Männlich</option><option value="f">Weiblich</option></select><input name="height" type="number" min="120" max="230" placeholder="Größe" required /></div>
-              <button type="submit">Charakter anlegen</button>
-              {error && <small className="error-message">{error}</small>}
-            </form>
-          </div>
-        </section>
-      </main>
-    );
+  useMenuToggle(screen?.toggleKey, () => void close(), !screen || screen.locked);
+  if (!screen) return <>{hud && <GameHud data={hud} />}<InteractionPrompt data={interaction} /></>;
+  if (screen.view === "phone") return <>{hud && <GameHud data={hud} />}</>;
+  if (screen.view === "hud") {
+    const data = parseHud(screen.payload);
+    return data ? <GameHud data={data} /> : null;
   }
-
-  const title = typeof screen.payload.title === 'string' ? screen.payload.title : screen.view;
-  const message = typeof screen.payload.message === 'string' ? screen.payload.message : '';
-
+  if (screen.view === "interaction") {
+    const data = parseInteraction(screen.payload);
+    return data ? <InteractionPrompt data={data} /> : null;
+  }
+  if (screen.view === "nativeui") {
+    const data = parseNativeMenu(screen.payload);
+    if (data)
+      return <>{hud && <GameHud data={hud} />}<NativeMenu data={data} toggleKey={screen.toggleKey} onClosed={() => setScreen(null)} /></>;
+  }
+  if (screen.view === "commerce") {
+    const data = parseCommerce(screen.payload);
+    if (data) return <CommerceView data={data} onClose={() => void close()} />;
+  }
+  if (screen.view === "clothing") {
+    const data = parseCommerce(screen.payload);
+    if (data?.clothing && data.offers.every(offer => offer.garment)) return <ClothingView key={data.session} data={data} onClose={() => void close()} />;
+  }
+  if (screen.view === 'banking') {
+    const data = parseBanking(screen.payload);
+    if (data) return <BankingView key={data.session} data={data} onClose={() => void close()} />;
+  }
+  if (screen.view === "inventory") {
+    const data = parseInventory(screen.payload);
+    if (data) return <Inventory key={data.session} data={data} onClose={() => void close()} />;
+  }
+  if (screen.view === "organizations") {
+    const data = parseOrganizations(screen.payload);
+    if (data) return <Organizations data={data} onClose={() => void close()} />;
+  }
+  if (screen.view === "settings") {
+    const data = parseBindings(screen.payload);
+    if (data) return <Settings data={data} onClosed={() => setScreen(null)} />;
+  }
+  if (screen.view === "me") {
+    const data = parseProfile(screen.payload);
+    if (data)
+      return (
+        <Me
+          data={data}
+          onClose={() => void close()}
+          onOrganizations={() =>
+            setScreen({
+              view: "organizations",
+              payload: { ...organizationPreview },
+              locked: false,
+            })
+          }
+        />
+      );
+  }
+  if (screen.view === "characters") {
+    const data = parseCharacters(screen.payload);
+    if (!data)
+      return (
+        <main className="fallback">
+          <section>
+            <div className="ui-title">
+              <UiIcon name="warning" />
+              <h1>Einreise unterbrochen</h1>
+            </div>
+            <p>
+              Die Charakterdaten konnten nicht gelesen werden. Bitte neu
+              verbinden.
+            </p>
+          </section>
+        </main>
+      );
+    return <Characters data={data} />;
+  }
   return (
-    <main className="overlay" aria-label={title}>
-      <section className="panel">
-        <span className="eyebrow">{screen.view}</span>
-        <h1>{title}</h1>
-        {message && <p>{message}</p>}
-        <button type="button" onClick={() => void close()}>
-          Schließen
+    <main className="fallback">
+      <section>
+        <p className="eyebrow">LOS SANTOS</p>
+        <div className="ui-title">
+          <UiIcon name="message" />
+          <h1>{String(screen.payload.title ?? screen.view)}</h1>
+        </div>
+        <p>{String(screen.payload.message ?? "")}</p>
+        <button className="ui-inline" onClick={() => void close()}>
+          Schließen <UiIcon name="close" />
         </button>
       </section>
     </main>

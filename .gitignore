@@ -6,6 +6,8 @@
 .vscode/*.log
 .codex-log/
 node_modules/
+__pycache__/
+*.pyc
 
 # FXServer binaries and downloaded runtime files
 /server/
@@ -17,6 +19,13 @@ server-data/db/
 server-data/resources/\[core\]/*
 server-data/resources/\[esx\]/*
 server-data/resources/\[system\]/*
+
+assets/
+/assets/
+assets
+
+# Downloaded clothing images used by the NUI
+/server-data/resources/\[custom\]/rp_ui/web/public/catalog/clothing/
 
 # Local server configuration and generated NUI output
 server-data/server.cfg

@@ -1,0 +1,62 @@
+/* Compact floating readouts; transparent surfaces stay local to the content. */
+.game-hud {
+  position: fixed;
+  width: max-content;
+  max-width: calc(100vw - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+  color: var(--ui-text);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  animation: hud-arrive 380ms ease-out both;
+}
+.hud-cash {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding: 0.5rem 0.8rem;
+  background: var(--ui-hud-surface);
+  border: 1px solid var(--ui-glass-edge);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.2rem 0.8rem #00000012;
+  text-shadow: 0 1px 3px #0006;
+}
+.hud-caption { display: flex; align-items: center; gap: 0.4rem; color: var(--ui-muted); font-size: 0.6rem; }
+.hud-caption .ui-icon { width: 0.95rem; height: 0.95rem; color: var(--ui-accent); }
+.hud-cash strong { font: 600 1.4rem "Manrope", sans-serif; letter-spacing: -0.035em; overflow-wrap: anywhere; text-align: right; }
+.hud-cash small { font-size: 0.9rem; color: var(--ui-accent); font-weight: 500; }
+.hud-details { display: flex; align-items: stretch; justify-content: flex-end; gap: 0.35rem; flex-wrap: wrap; }
+.hud-meta, .hud-voice {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.55rem;
+  background: var(--ui-hud-surface);
+  border: 1px solid #ffffff12;
+  border-radius: 0.35rem;
+  text-shadow: 0 1px 3px #0006;
+}
+.hud-meta { gap: 0.65rem; font-size: 0.63rem; }
+.hud-meta span { display: flex; align-items: center; gap: 0.25rem; color: var(--ui-muted); }
+.hud-meta b { font-weight: 550; color: var(--ui-text); }
+.hud-meta .ui-icon { width: 0.8rem; height: 0.8rem; }
+.hud-id { border-left: 1px solid var(--ui-line); padding-left: 0.65rem; }
+.hud-voice { gap: 0.35rem; color: var(--ui-muted); transition: color 220ms ease, border-color 220ms ease, background 220ms ease; }
+.hud-voice > .ui-icon { width: 0.8rem; height: 0.8rem; }
+.hud-range { font-size: 0.7rem; font-weight: 500; }
+.hud-range small { font-size: 0.6rem; font-weight: 400; }
+.hud-voice-status { display: flex; align-items: center; gap: 0.3rem; font-size: 0.6rem; }
+.hud-voice-status i { width: 0.23rem; height: 0.23rem; border-radius: 50%; background: currentColor; opacity: 0.5; transition: opacity 220ms ease; }
+.hud-voice.is-talking { color: var(--ui-accent); border-color: var(--ui-line-strong); background: var(--ui-glass-header); }
+.hud-voice.is-talking .hud-voice-status i { opacity: 1; }
+.hud-voice.is-offline { color: var(--ui-warning); }
+@keyframes hud-arrive {
+  from { opacity: 0; transform: translateY(-0.3rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game-hud { animation: none; }
+  .hud-voice, .hud-voice-status i { transition: none; }
+}

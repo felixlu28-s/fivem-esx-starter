@@ -1,0 +1,1662 @@
+[
+  {
+    "id": "bag_0_1",
+    "label": "Taschen · Accessoires 01 · 01",
+    "artwork": "clothing/0/bag/1_0",
+    "icon": "clothes",
+    "description": "Taschen · Accessoires 01 · 01",
+    "category": "Taschen · Accessoires",
+    "weight": 200,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "bag",
+      "image": "bag",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "bag_0_2",
+    "label": "Taschen · Accessoires 02 · 01",
+    "artwork": "clothing/0/bag/2_0",
+    "icon": "clothes",
+    "description": "Taschen · Accessoires 02 · 01",
+    "category": "Taschen · Accessoires",
+    "weight": 200,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "bag",
+      "image": "bag",
+      "color": "#b6a78c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "bag_0_3",
+    "label": "Taschen · Accessoires 03 · 01",
+    "artwork": "clothing/0/bag/3_0",
+    "icon": "clothes",
+    "description": "Taschen · Accessoires 03 · 01",
+    "category": "Taschen · Accessoires",
+    "weight": 200,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "bag",
+      "image": "bag",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "bag_0_4",
+    "label": "Taschen · Accessoires 04 · 01",
+    "artwork": "clothing/0/bag/4_0",
+    "icon": "clothes",
+    "description": "Taschen · Accessoires 04 · 01",
+    "category": "Taschen · Accessoires",
+    "weight": 200,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "bag",
+      "image": "bag",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "bracelet_0_0",
+    "label": "Dünnes Armband rechts",
+    "artwork": "clothing/0/bracelet/0_0",
+    "icon": "clothes",
+    "description": "Dünnes Armband rechts",
+    "category": "Armbänder",
+    "weight": 30,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "bracelet",
+      "image": "bracelet",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "bracelet_0_1",
+    "label": "Breites Armband rechts",
+    "artwork": "clothing/0/bracelet/1_0",
+    "icon": "clothes",
+    "description": "Breites Armband rechts",
+    "category": "Armbänder",
+    "weight": 30,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "bracelet",
+      "image": "bracelet",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_1",
+    "label": "Ketten 01 · 01",
+    "artwork": "clothing/0/chain/1_0",
+    "icon": "clothes",
+    "description": "Ketten 01 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_2",
+    "label": "Ketten 02 · 01",
+    "artwork": "clothing/0/chain/2_0",
+    "icon": "clothes",
+    "description": "Ketten 02 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#b6a78c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_3",
+    "label": "Ketten 03 · 01",
+    "artwork": "clothing/0/chain/3_0",
+    "icon": "clothes",
+    "description": "Ketten 03 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_4",
+    "label": "Ketten 04 · 01",
+    "artwork": "clothing/0/chain/4_0",
+    "icon": "clothes",
+    "description": "Ketten 04 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_5",
+    "label": "Ketten 05 · 01",
+    "artwork": "clothing/0/chain/5_0",
+    "icon": "clothes",
+    "description": "Ketten 05 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 120,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_6",
+    "label": "Ketten 06 · 01",
+    "artwork": "clothing/0/chain/6_0",
+    "icon": "clothes",
+    "description": "Ketten 06 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 135,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#b6a78c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_7",
+    "label": "Ketten 07 · 01",
+    "artwork": "clothing/0/chain/7_0",
+    "icon": "clothes",
+    "description": "Ketten 07 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 150,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "chain_0_8",
+    "label": "Ketten 08 · 01",
+    "artwork": "clothing/0/chain/8_0",
+    "icon": "clothes",
+    "description": "Ketten 08 · 01",
+    "category": "Ketten",
+    "weight": 60,
+    "price": 165,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "chain",
+      "image": "chain",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "ears_0_0",
+    "label": "Grauer Ohrhörer",
+    "artwork": "clothing/0/ears/0_0",
+    "icon": "clothes",
+    "description": "Grauer Ohrhörer",
+    "category": "Ohrringe",
+    "weight": 10,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "ears",
+      "image": "ears",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "ears_0_1",
+    "label": "Roter Ohrhörer",
+    "artwork": "clothing/0/ears/1_0",
+    "icon": "clothes",
+    "description": "Roter Ohrhörer",
+    "category": "Ohrringe",
+    "weight": 10,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "ears",
+      "image": "ears",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "ears_0_2",
+    "label": "LCD-Ohrhörer",
+    "artwork": "clothing/0/ears/2_0",
+    "icon": "clothes",
+    "description": "LCD-Ohrhörer",
+    "category": "Ohrringe",
+    "weight": 10,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "ears",
+      "image": "ears",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "ears_0_3",
+    "label": "Goldene eckige Creole links",
+    "artwork": "clothing/0/ears/3_0",
+    "icon": "clothes",
+    "description": "Goldene eckige Creole links",
+    "category": "Ohrringe",
+    "weight": 10,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "ears",
+      "image": "ears",
+      "color": "#748b7c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "ears_0_4",
+    "label": "Goldene eckige Creole rechts",
+    "artwork": "clothing/0/ears/4_0",
+    "icon": "clothes",
+    "description": "Goldene eckige Creole rechts",
+    "category": "Ohrringe",
+    "weight": 10,
+    "price": 120,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "ears",
+      "image": "ears",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_0",
+    "label": "Brillen 00 · 01",
+    "artwork": "clothing/0/glasses/0_0",
+    "icon": "clothes",
+    "description": "Brillen 00 · 01",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_1",
+    "label": "Brillen 01 · 01",
+    "artwork": "clothing/0/glasses/1_0",
+    "icon": "clothes",
+    "description": "Brillen 01 · 01",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_10",
+    "label": "Goldene Bull Emic",
+    "artwork": "clothing/0/glasses/10_0",
+    "icon": "clothes",
+    "description": "Goldene Bull Emic",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 210,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_2",
+    "label": "Schwarze Winter-Sonnenbrille",
+    "artwork": "clothing/0/glasses/2_0",
+    "icon": "clothes",
+    "description": "Schwarze Winter-Sonnenbrille",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_3",
+    "label": "Schiefergraue Janitor-Brille",
+    "artwork": "clothing/0/glasses/3_0",
+    "icon": "clothes",
+    "description": "Schiefergraue Janitor-Brille",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#748b7c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_4",
+    "label": "Braune Enema-Brille",
+    "artwork": "clothing/0/glasses/4_0",
+    "icon": "clothes",
+    "description": "Braune Enema-Brille",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 120,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_5",
+    "label": "Goldene Pilotenbrille",
+    "artwork": "clothing/0/glasses/5_0",
+    "icon": "clothes",
+    "description": "Goldene Pilotenbrille",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 135,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_6",
+    "label": "Brillen 06 · 01",
+    "artwork": "clothing/0/glasses/6_0",
+    "icon": "clothes",
+    "description": "Brillen 06 · 01",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 150,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_7",
+    "label": "Schwarze Freizeitbrille",
+    "artwork": "clothing/0/glasses/7_0",
+    "icon": "clothes",
+    "description": "Schwarze Freizeitbrille",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 165,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#748b7c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_8",
+    "label": "Braune Brille",
+    "artwork": "clothing/0/glasses/8_0",
+    "icon": "clothes",
+    "description": "Braune Brille",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 180,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "glasses_0_9",
+    "label": "Schwarze Hawaiian Snow",
+    "artwork": "clothing/0/glasses/9_0",
+    "icon": "clothes",
+    "description": "Schwarze Hawaiian Snow",
+    "category": "Brillen",
+    "weight": 40,
+    "price": 195,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "glasses",
+      "image": "glasses",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_0",
+    "label": "Roter Gehörschutz",
+    "artwork": "clothing/0/hat/0_0",
+    "icon": "clothes",
+    "description": "Roter Gehörschutz",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_1",
+    "label": "Weiße Eselsmütze",
+    "artwork": "clothing/0/hat/1_0",
+    "icon": "clothes",
+    "description": "Weiße Eselsmütze",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_2",
+    "label": "Schwarze Wintermütze",
+    "artwork": "clothing/0/hat/2_0",
+    "icon": "clothes",
+    "description": "Schwarze Wintermütze",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_3",
+    "label": "Kopfbedeckungen 03 · 01",
+    "artwork": "clothing/0/hat/3_0",
+    "icon": "clothes",
+    "description": "Kopfbedeckungen 03 · 01",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#748b7c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_4",
+    "label": "Schwarze LS-Kappe",
+    "artwork": "clothing/0/hat/4_0",
+    "icon": "clothes",
+    "description": "Schwarze LS-Kappe",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 120,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_5",
+    "label": "Schwarze lockere Wollmütze",
+    "artwork": "clothing/0/hat/5_0",
+    "icon": "clothes",
+    "description": "Schwarze lockere Wollmütze",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 135,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "hat_0_6",
+    "label": "Grüne Armeekappe",
+    "artwork": "clothing/0/hat/6_0",
+    "icon": "clothes",
+    "description": "Grüne Armeekappe",
+    "category": "Kopfbedeckungen",
+    "weight": 120,
+    "price": 150,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "hat",
+      "image": "hat",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "mask_0_1",
+    "label": "Rosa Schweinemaske",
+    "artwork": "clothing/0/mask/1_0",
+    "icon": "clothes",
+    "description": "Rosa Schweinemaske",
+    "category": "Masken",
+    "weight": 90,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "mask",
+      "image": "mask",
+      "color": "#333e49",
+      "view": "face"
+    }
+  },
+  {
+    "id": "mask_0_2",
+    "label": "Silberne Totenkopfmaske",
+    "artwork": "clothing/0/mask/2_0",
+    "icon": "clothes",
+    "description": "Silberne Totenkopfmaske",
+    "category": "Masken",
+    "weight": 90,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "mask",
+      "image": "mask",
+      "color": "#b6a78c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "mask_0_3",
+    "label": "Pogo-Maske",
+    "artwork": "clothing/0/mask/3_0",
+    "icon": "clothes",
+    "description": "Pogo-Maske",
+    "category": "Masken",
+    "weight": 90,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "mask",
+      "image": "mask",
+      "color": "#748b7c",
+      "view": "face"
+    }
+  },
+  {
+    "id": "mask_0_4",
+    "label": "Weiße Hockeymaske",
+    "artwork": "clothing/0/mask/4_0",
+    "icon": "clothes",
+    "description": "Weiße Hockeymaske",
+    "category": "Masken",
+    "weight": 90,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "mask",
+      "image": "mask",
+      "color": "#b5b9b4",
+      "view": "face"
+    }
+  },
+  {
+    "id": "pants_0_0",
+    "label": "Marineblaue Regular-Fit-Jeans",
+    "artwork": "clothing/0/pants/0_0",
+    "icon": "clothes",
+    "description": "Marineblaue Regular-Fit-Jeans",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 94,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b5b9b4",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_1",
+    "label": "Schiefergraue Jeans",
+    "artwork": "clothing/0/pants/1_0",
+    "icon": "clothes",
+    "description": "Schiefergraue Jeans",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 103,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#333e49",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_10",
+    "label": "Schwarze Hose",
+    "artwork": "clothing/0/pants/10_0",
+    "icon": "clothes",
+    "description": "Schwarze Hose",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 175,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b6a78c",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_12",
+    "label": "Schwarze Chinohose",
+    "artwork": "clothing/0/pants/12_0",
+    "icon": "clothes",
+    "description": "Schwarze Chinohose",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 184,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b5b9b4",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_14",
+    "label": "Anthrazitfarbene Laufhose",
+    "artwork": "clothing/0/pants/14_0",
+    "icon": "clothes",
+    "description": "Anthrazitfarbene Laufhose",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 193,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b6a78c",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_2",
+    "label": "Hosen 02 · 01",
+    "artwork": "clothing/0/pants/2_0",
+    "icon": "clothes",
+    "description": "Hosen 02 · 01",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 112,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b6a78c",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_3",
+    "label": "Trainingshose mit weißen Streifen",
+    "artwork": "clothing/0/pants/3_0",
+    "icon": "clothes",
+    "description": "Trainingshose mit weißen Streifen",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 121,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#748b7c",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_4",
+    "label": "Schwarze enge Jeans",
+    "artwork": "clothing/0/pants/4_0",
+    "icon": "clothes",
+    "description": "Schwarze enge Jeans",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 130,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b5b9b4",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_5",
+    "label": "Jogginghose mit weißen Streifen",
+    "artwork": "clothing/0/pants/5_0",
+    "icon": "clothes",
+    "description": "Jogginghose mit weißen Streifen",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 139,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#333e49",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_7",
+    "label": "Schwarze Arbeitshose",
+    "artwork": "clothing/0/pants/7_0",
+    "icon": "clothes",
+    "description": "Schwarze Arbeitshose",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 148,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#748b7c",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_8",
+    "label": "Anthrazitfarbene Chinohose",
+    "artwork": "clothing/0/pants/8_0",
+    "icon": "clothes",
+    "description": "Anthrazitfarbene Chinohose",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 157,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#b5b9b4",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "pants_0_9",
+    "label": "Olivgrüne Cargohose",
+    "artwork": "clothing/0/pants/9_0",
+    "icon": "clothes",
+    "description": "Olivgrüne Cargohose",
+    "category": "Hosen",
+    "weight": 450,
+    "price": 166,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "pants",
+      "image": "pants",
+      "color": "#333e49",
+      "view": "lower"
+    }
+  },
+  {
+    "id": "shoes_0_1",
+    "label": "Schwarze Skateschuhe",
+    "artwork": "clothing/0/shoes/1_0",
+    "icon": "clothes",
+    "description": "Schwarze Skateschuhe",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 82,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#333e49",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_10",
+    "label": "Schwarze Oxfords",
+    "artwork": "clothing/0/shoes/10_0",
+    "icon": "clothes",
+    "description": "Schwarze Oxfords",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 190,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#b6a78c",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_12",
+    "label": "Kupferfarbene Arbeitsstiefel",
+    "artwork": "clothing/0/shoes/12_0",
+    "icon": "clothes",
+    "description": "Kupferfarbene Arbeitsstiefel",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 202,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#b5b9b4",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_2",
+    "label": "Schuhe 02 · 01",
+    "artwork": "clothing/0/shoes/2_0",
+    "icon": "clothes",
+    "description": "Schuhe 02 · 01",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 94,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#b6a78c",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_3",
+    "label": "Luxus-Bootsschuhe",
+    "artwork": "clothing/0/shoes/3_0",
+    "icon": "clothes",
+    "description": "Luxus-Bootsschuhe",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 106,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#748b7c",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_4",
+    "label": "Marineblaue Leinenschuhe",
+    "artwork": "clothing/0/shoes/4_0",
+    "icon": "clothes",
+    "description": "Marineblaue Leinenschuhe",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 118,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#b5b9b4",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_5",
+    "label": "Weiße Flipflops",
+    "artwork": "clothing/0/shoes/5_0",
+    "icon": "clothes",
+    "description": "Weiße Flipflops",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 130,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#333e49",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_6",
+    "label": "Anthrazit mit weißen Socken",
+    "artwork": "clothing/0/shoes/6_0",
+    "icon": "clothes",
+    "description": "Anthrazit mit weißen Socken",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 142,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#b6a78c",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_7",
+    "label": "Weiße Sportschuhe",
+    "artwork": "clothing/0/shoes/7_0",
+    "icon": "clothes",
+    "description": "Weiße Sportschuhe",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 154,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#748b7c",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_8",
+    "label": "Weiße Trainingsschuhe",
+    "artwork": "clothing/0/shoes/8_0",
+    "icon": "clothes",
+    "description": "Weiße Trainingsschuhe",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 166,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#b5b9b4",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "shoes_0_9",
+    "label": "Klassische weiße Sneaker",
+    "artwork": "clothing/0/shoes/9_0",
+    "icon": "clothes",
+    "description": "Klassische weiße Sneaker",
+    "category": "Schuhe",
+    "weight": 600,
+    "price": 178,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "shoes",
+      "image": "shoes",
+      "color": "#333e49",
+      "view": "shoes"
+    }
+  },
+  {
+    "id": "top_0_0",
+    "label": "Crew-T-Shirt",
+    "artwork": "clothing/0/top/0_0",
+    "icon": "clothes",
+    "description": "Crew-T-Shirt",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "top",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_1",
+    "label": "Weißes Shirt mit V-Ausschnitt",
+    "artwork": "clothing/0/top/1_0",
+    "icon": "clothes",
+    "description": "Weißes Shirt mit V-Ausschnitt",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 102,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "top",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_11",
+    "label": "Graue Weste",
+    "artwork": "clothing/0/top/11_0",
+    "icon": "clothes",
+    "description": "Graue Weste",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 222,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "shirt",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_12",
+    "label": "Weißes Hemd, offen getragen",
+    "artwork": "clothing/0/top/12_0",
+    "icon": "clothes",
+    "description": "Weißes Hemd, offen getragen",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 234,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "shirt",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_13",
+    "label": "Weißes Hemd, eingesteckt",
+    "artwork": "clothing/0/top/13_0",
+    "icon": "clothes",
+    "description": "Weißes Hemd, eingesteckt",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 246,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "sweater",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_14",
+    "label": "Blaues Karohemd",
+    "artwork": "clothing/0/top/14_0",
+    "icon": "clothes",
+    "description": "Blaues Karohemd",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 258,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "top",
+      "color": "#b6a78c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_16",
+    "label": "Cerveza-Barracho-V-Shirt",
+    "artwork": "clothing/0/top/16_0",
+    "icon": "clothes",
+    "description": "Cerveza-Barracho-V-Shirt",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 282,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "jacket",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_3",
+    "label": "Zweifarbige Trainingsjacke",
+    "artwork": "clothing/0/top/3_0",
+    "icon": "clothes",
+    "description": "Zweifarbige Trainingsjacke",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 126,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "jacket",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_4",
+    "label": "Schwarzes Sakko",
+    "artwork": "clothing/0/top/4_0",
+    "icon": "clothes",
+    "description": "Schwarzes Sakko",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 138,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "top",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_7",
+    "label": "Weißer Hoodie",
+    "artwork": "clothing/0/top/7_0",
+    "icon": "clothes",
+    "description": "Weißer Hoodie",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 174,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "blazer",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_8",
+    "label": "T-Shirt mit roten Akzenten",
+    "artwork": "clothing/0/top/8_0",
+    "icon": "clothes",
+    "description": "T-Shirt mit roten Akzenten",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 186,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "top",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "top_0_9",
+    "label": "Weißes gestreiftes Poloshirt",
+    "artwork": "clothing/0/top/9_0",
+    "icon": "clothes",
+    "description": "Weißes gestreiftes Poloshirt",
+    "category": "Oberteile",
+    "weight": 500,
+    "price": 198,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "top",
+      "image": "jacket",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "undershirt_0_1",
+    "label": "Weißes Shirt mit V-Ausschnitt",
+    "artwork": "clothing/0/undershirt/1_0",
+    "icon": "clothes",
+    "description": "Weißes Shirt mit V-Ausschnitt",
+    "category": "Unterziehshirts",
+    "weight": 180,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "undershirt",
+      "image": "undershirt",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "undershirt_0_2",
+    "label": "Crew-T-Shirt",
+    "artwork": "clothing/0/undershirt/2_0",
+    "icon": "clothes",
+    "description": "Crew-T-Shirt",
+    "category": "Unterziehshirts",
+    "weight": 180,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "undershirt",
+      "image": "undershirt",
+      "color": "#b6a78c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "undershirt_0_3",
+    "label": "Schwarze Weste",
+    "artwork": "clothing/0/undershirt/3_0",
+    "icon": "clothes",
+    "description": "Schwarze Weste",
+    "category": "Unterziehshirts",
+    "weight": 180,
+    "price": 90,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "undershirt",
+      "image": "undershirt",
+      "color": "#748b7c",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "undershirt_0_4",
+    "label": "Schwarze Weste",
+    "artwork": "clothing/0/undershirt/4_0",
+    "icon": "clothes",
+    "description": "Schwarze Weste",
+    "category": "Unterziehshirts",
+    "weight": 180,
+    "price": 105,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "undershirt",
+      "image": "undershirt",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "undershirt_0_5",
+    "label": "Weißes Tanktop",
+    "artwork": "clothing/0/undershirt/5_0",
+    "icon": "clothes",
+    "description": "Weißes Tanktop",
+    "category": "Unterziehshirts",
+    "weight": 180,
+    "price": 120,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "undershirt",
+      "image": "undershirt",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "watch_0_0",
+    "label": "Tiefseeuhr",
+    "artwork": "clothing/0/watch/0_0",
+    "icon": "clothes",
+    "description": "Tiefseeuhr",
+    "category": "Uhren",
+    "weight": 80,
+    "price": 60,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "watch",
+      "image": "watch",
+      "color": "#b5b9b4",
+      "view": "upper"
+    }
+  },
+  {
+    "id": "watch_0_1",
+    "label": "Weiße LED-Uhr, schwarzes Band",
+    "artwork": "clothing/0/watch/1_0",
+    "icon": "clothes",
+    "description": "Weiße LED-Uhr, schwarzes Band",
+    "category": "Uhren",
+    "weight": 80,
+    "price": 75,
+    "count": 1,
+    "seconds": 0,
+    "owned": 0,
+    "ingredients": [],
+    "garment": {
+      "category": "watch",
+      "image": "watch",
+      "color": "#333e49",
+      "view": "upper"
+    }
+  }
+]

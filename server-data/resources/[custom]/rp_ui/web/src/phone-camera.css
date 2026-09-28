@@ -1,0 +1,52 @@
+.phone-gallery-icon{display:grid;place-items:center;background:linear-gradient(145deg,#f8c263,#d9766b 45%,#8e7db8);box-shadow:inset 0 1px 2px #fff9,0 .15rem .25rem #0006}
+.phone-gallery-icon .ui-icon{width:2.3rem;height:2.3rem;color:#fff;stroke-width:1.5}
+.phone-camera-screen{padding:0;background:#090a0a}.phone-camera-screen .phone-app-title{display:none}
+.phone-camera-screen .phone-app-content{padding:0;border-radius:0;overflow:hidden;background:#080909}
+.phone-camera-app{height:100%;display:flex;flex-direction:column;color:var(--ui-text);background:#090a0a;min-height:0}
+.camera-viewfinder{position:relative;flex:1;min-height:0;overflow:hidden;background:#0d1010}
+.camera-viewfinder>video{height:100%;width:100%;display:block;object-fit:contain}
+.camera-top{position:absolute;top:.65rem;left:.6rem;right:.6rem;display:flex;justify-content:space-between;gap:.4rem;font-size:.5rem;letter-spacing:.06em;text-shadow:0 1px 3px #000;background:#1118;padding:.25rem .35rem;border-radius:.2rem}
+.recording .camera-top>span:last-child{background:#d84242;color:#fff;padding:.1rem .3rem;border-radius:.2rem}
+.camera-loading{position:absolute;inset:0;display:grid;place-items:center;font-size:.7rem;color:#b9c5c0}
+.camera-focus{position:absolute;left:50%;top:50%;width:2.8rem;height:2.8rem;transform:translate(-50%,-50%);border:1px solid #e8d78065;border-radius:.2rem;pointer-events:none}
+.camera-zoom{position:absolute;bottom:.55rem;left:50%;transform:translateX(-50%);display:flex;gap:.35rem;border-radius:2rem;background:#121b1bbd;padding:.2rem .3rem}
+.camera-zoom>div{height:1.7rem;min-width:1.7rem;display:flex;justify-content:center;align-items:center;gap:.04rem;font-size:.67rem;border-radius:50%;color:#fff}
+.camera-zoom small{color:inherit;font-size:.5rem}.camera-zoom>div.active{color:#f0db8b;background:#ffffff18}
+.phone-camera-app .selected{background:transparent;color:inherit;outline:.12rem solid #f2e2ac;outline-offset:.12rem;border-radius:.3rem}
+.phone-camera-app .camera-zoom>.selected{border-radius:50%;background:#ffffff15}
+.camera-modes{display:flex;align-items:center;justify-content:center;gap:1.2rem;padding:.5rem .2rem .25rem;font-size:.64rem;text-transform:uppercase;letter-spacing:.055em}
+.camera-modes>div{padding:.12rem .25rem;color:#a7b2ac}.camera-modes>div.active{color:#efd994}
+.camera-bottom{height:3.7rem;display:grid;grid-template-columns:1fr 1.3fr 1fr;place-items:center;padding:.2rem .8rem .55rem;flex:none}
+.camera-library{width:1.7rem;height:1.7rem;display:grid;place-items:center;background:#25302b;border-radius:.24rem;overflow:hidden}
+.camera-library>img{width:100%;height:100%;object-fit:cover}
+.camera-flip{display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;background:#ffffff13}
+.camera-shutter{height:2.7rem;width:2.7rem;border-radius:50%;border:.16rem solid #f4f4f0;padding:.17rem;display:grid;place-items:center}
+.phone-camera-app .camera-shutter.selected{border-radius:50%;outline-offset:.2rem}
+.camera-shutter>span{width:100%;height:100%;border-radius:50%;background:#f8f9f4;transition:width .15s,height .15s,border-radius .15s}
+.camera-shutter.video>span{background:#ed494c}.recording .camera-shutter>span{width:55%;height:55%;border-radius:.25rem}
+.camera-shutter[aria-disabled=true],.camera-library[aria-disabled=true]{opacity:.45}
+.camera-flash{position:absolute;inset:0;background:#fff;animation:camera-flash .13s ease-out forwards;pointer-events:none}
+@keyframes camera-flash{from{opacity:.85}to{opacity:0}}
+.camera-error,.gallery-error{margin:0;font-size:.6rem;padding:.45rem .6rem;background:#482c27;color:#f8d9cd;flex:none}
+.phone-gallery-app{height:100%;display:flex;flex-direction:column;min-height:0;color:var(--ui-ink);background:var(--ui-text);font-size:.7rem}
+.gallery-heading{display:flex;align-items:center;justify-content:space-between;gap:.3rem;padding:.7rem .55rem;flex:none}
+.gallery-heading h3{font-size:1.3rem;letter-spacing:-.03em;margin:0 0 .15rem}.gallery-heading strong{display:block;font-size:.8rem}.gallery-heading small{color:#708077;font-size:.5rem}
+.gallery-controls{display:flex;flex:none;gap:.3rem;align-items:center;justify-content:space-around}
+.gallery-control{padding:.45rem .55rem;color:#3478bb;border-radius:.3rem;display:flex;align-items:center;justify-content:center;gap:.3rem;min-height:1.8rem;font-size:.6rem}
+.gallery-control>.ui-icon{width:1rem;height:1rem}
+.phone-gallery-app .selected{background:#dfebf5;color:var(--ui-ink);outline:.1rem solid #3a82c1;outline-offset:-.1rem;border-radius:.25rem}
+.gallery-grid-scroll{flex:1;min-height:0;overflow:auto;scrollbar-width:thin;scrollbar-color:#849b8e transparent}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.1rem;padding:0 .2rem .1rem}
+.gallery-tile{aspect-ratio:1;min-width:0;position:relative;overflow:hidden;background:#d4ded6}
+.gallery-tile>img{display:block;width:100%;height:100%;object-fit:cover}.gallery-tile>small{position:absolute;right:.2rem;bottom:.2rem;background:#131b1aa8;color:#fff;font-size:.51rem;padding:.15rem .25rem;display:flex;align-items:center;gap:.15rem}
+.gallery-tile .ui-icon{width:.6rem;height:.6rem}.phone-gallery-app .gallery-tile.selected{outline-offset:-.18rem;outline-width:.18rem;border-radius:0}
+.gallery-empty{height:100%;min-height:12rem;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:.5rem;padding:1rem}
+.gallery-empty>.ui-icon{width:2.5rem;height:2.5rem;color:#809689}.gallery-empty strong{font-size:.85rem}.gallery-empty p{margin:0;font-size:.63rem;line-height:1.5;color:#708076}
+.gallery-filters{border-top:1px solid #19251e18;padding:.4rem .2rem;background:#f9fbf9}.gallery-filters .active{color:#226aaa;font-weight:700}
+.gallery-pages{padding:.2rem;font-size:.6rem}.gallery-viewer{flex:1;min-height:0;background:#111815;display:grid;place-items:center;overflow:hidden}
+.gallery-viewer>img,.gallery-viewer>video{height:100%;width:100%;object-fit:contain;min-height:0;display:block}
+.gallery-play-time{display:block;text-align:center;padding:.3rem;font-size:.53rem!important;color:#6e7d75!important}
+.gallery-actions{padding:.4rem;border-top:1px solid #19251e18}.gallery-playback{padding:.1rem .4rem}
+.gallery-control[aria-disabled=true]{opacity:.5}
+.phone-gallery-app .comm-form{--comm-paper:#fff;--comm-line:#19251e18;--comm-blue:#2473c8;--comm-muted:#738078}
+@media(prefers-reduced-motion:reduce){.camera-shutter>span{transition:none}.camera-flash{animation:none;opacity:0}}

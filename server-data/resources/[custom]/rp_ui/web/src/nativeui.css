@@ -1,0 +1,219 @@
+/* Native interaction-menu variant. No full-screen scrim; the world stays visible. */
+.native-control-hint {
+  position: fixed;
+  right: 2.5vw;
+  bottom: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: min(30rem, 95vw);
+  padding: 0.7rem 0.9rem;
+  background: var(--ui-surface);
+  border-top: 0.12rem solid var(--ui-accent);
+  pointer-events: none;
+  animation: native-hint-in 300ms ease-out both;
+}
+.native-control-keys { display: flex; gap: 0.25rem; }
+.native-control-keys kbd {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.9rem;
+  border: 0.06rem solid var(--ui-line);
+  border-bottom: 0.22rem solid var(--ui-accent);
+  border-radius: var(--ui-radius);
+  background: var(--ui-row);
+  color: var(--ui-text);
+  font: inherit;
+  font-weight: 700;
+}
+.native-control-hint strong { display: block; font-size: 0.88rem; font-weight: 600; }
+.native-control-hint span { display: block; margin-top: 0.15rem; color: var(--ui-muted); font-size: 0.7rem; }
+@keyframes native-hint-in { from { opacity: 0; transform: translateY(0.35rem); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .native-control-hint { animation: none; } }
+.native-menu {
+  --native-accent: var(--ui-accent);
+  --native-banner: var(--ui-native-banner);
+  position: fixed;
+  top: 3.5vh;
+  left: 2.5vw;
+  width: min(25rem, 95vw);
+  color: var(--ui-text);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-variant-numeric: tabular-nums;
+  outline: none;
+  cursor: default;
+}
+.native-banner {
+  position: relative;
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.85rem;
+  overflow: hidden;
+  background: var(--native-banner);
+}
+.native-banner h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Arial Narrow", "Impact", "DM Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-shadow: 0 0.06rem 0.12rem #09271c77;
+}
+.native-globe {
+  position: absolute;
+  right: -0.5rem;
+  top: -2.2rem;
+  width: 12rem;
+  height: 12rem;
+  color: #09271c;
+  opacity: 0.25;
+  transform: rotate(18deg);
+}
+.native-subtitle {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.38rem 0.65rem;
+  background: #050709f5;
+  color: var(--native-accent);
+  font-size: 0.87rem;
+  text-transform: uppercase;
+}
+.native-subtitle span:first-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.native-subtitle span:last-child {
+  flex-shrink: 0;
+}
+.native-rows {
+  background: linear-gradient(110deg, #080d11ed, #101818b8);
+}
+.native-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  min-height: 2.15rem;
+  padding: 0.35rem 0.65rem;
+}
+.native-row.is-selected {
+  background: linear-gradient(90deg, #f3f4ef, #dcdedb);
+  color: #121717;
+}
+.native-row.is-disabled {
+  color: #969c99;
+}
+.native-row.is-selected.is-disabled {
+  color: #626964;
+}
+.native-row-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.native-row-value {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  max-width: 53%;
+}
+.native-row-value > span:not(.native-checkbox) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.native-arrow {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.3;
+}
+.native-arrow-left {
+  transform: rotate(180deg);
+}
+.native-arrow-up {
+  transform: rotate(-90deg);
+}
+.native-arrow-down {
+  transform: rotate(90deg);
+}
+.native-checkbox {
+  width: 1.05rem;
+  height: 1.05rem;
+  border: 0.1rem solid currentColor;
+}
+.native-checkbox svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+}
+.native-lock {
+  width: 0.85rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+.native-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1.7rem;
+  background: #070c0ee8;
+  border-top: 0.06rem solid #ffffff24;
+}
+.native-scroll .native-arrow {
+  width: 0.8rem;
+  height: 0.65rem;
+}
+.native-description {
+  margin: 0.16rem 0 0;
+  padding: 0.6rem 0.65rem;
+  background: #080e10e3;
+  border-top: 0.1rem solid #ffffff2b;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  max-height: 18vh;
+  overflow: hidden;
+}
+.native-description.is-error {
+  color: var(--ui-warning);
+}
+.native-empty {
+  padding: 0.8rem 0.65rem;
+  color: var(--ui-muted);
+}
+@media (max-height: 650px) {
+  .native-menu {
+    font-size: 0.85rem;
+  }
+  .native-banner {
+    height: 4rem;
+  }
+  .native-row {
+    min-height: 1.65rem;
+    padding-block: 0.15rem;
+  }
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de" class="game-ui">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Los Santos · Willkommen</title>
+    <style>html,body{margin:0;background:#141b18;color:#f0f2ec}#root:empty::after{content:'LOS SANTOS · Verbindung wird vorbereitet';position:fixed;bottom:6%;left:5%;font:16px Arial,sans-serif}</style>
+    <script>
+      // Capture early engine events before the deferred React bundle is ready.
+      // One latest snapshot, never an unbounded log/download queue.
+      window.rpLoadingEarly = { fraction: null, phase: 'assets' };
+      window.rpLoadingCapture = function (event) {
+        var d = event.data, s = window.rpLoadingEarly;
+        if (!d || typeof d !== 'object') return;
+        if (d.eventName === 'loadProgress' && typeof d.loadFraction === 'number' && Number.isFinite(d.loadFraction)) {
+          s.fraction = Math.max(s.fraction || 0, Math.max(0, Math.min(1, d.loadFraction)));
+        }
+        if (d.action === 'ui:loading' && d.data && ['session', 'scene', 'exiting'].indexOf(d.data.phase) >= 0) {
+          var phases = ['assets', 'session', 'scene', 'exiting'];
+          if (phases.indexOf(d.data.phase) > phases.indexOf(s.phase)) s.phase = d.data.phase;
+        }
+      };
+      window.addEventListener('message', window.rpLoadingCapture);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/loading/main.tsx"></script>
+  </body>
+</html>

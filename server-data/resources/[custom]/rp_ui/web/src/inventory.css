@@ -1,0 +1,442 @@
+.inventory-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 6vh 4vw;
+  background: transparent;
+}
+.inventory-shell {
+  width: min(76rem, 100%);
+  height: auto;
+  max-height: min(42rem, 84vh);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr);
+  gap: 1.1rem;
+  color: var(--ui-text);
+  animation: inventory-arrive 260ms ease-out both;
+}
+.inventory-shell-single {
+  width: min(calc((76rem - var(--ui-gap)) / 2), 100%);
+  grid-template-columns: minmax(0, 1fr);
+}
+.inventory-store {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+.inventory-store-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.5rem;
+  flex-shrink: 0;
+  padding: 0.85rem 1rem;
+  background: var(--ui-inventory-header);
+  border-radius: var(--ui-radius) var(--ui-radius) 0 0;
+  text-shadow: 0 1px 3px #0006;
+}
+.inventory-store-symbol {
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+  color: var(--ui-accent);
+}
+.inventory-store h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  margin-right: auto;
+}
+.inventory-weight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.2rem;
+  font-size: var(--ui-body);
+  white-space: nowrap;
+}
+.inventory-weight small,
+.inventory-weight span {
+  font-weight: 400;
+  color: var(--ui-muted);
+  font-size: var(--ui-caption);
+}
+.inventory-tools {
+  display: flex;
+  gap: 0.2rem;
+}
+.inventory-tools button {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 2rem;
+  padding: 0;
+  background: transparent;
+  color: var(--ui-text);
+  border-radius: var(--ui-radius);
+}
+.inventory-tools .ui-icon {
+  width: 1rem;
+  height: 1rem;
+}
+.inventory-tools button:not(:disabled):hover {
+  background: var(--ui-hover);
+  color: var(--ui-text);
+}
+.inventory-tools .inventory-bag {
+  color: var(--ui-accent);
+}
+.inventory-weight-track {
+  height: 0.1rem;
+  flex-shrink: 0;
+  background: var(--ui-line);
+  margin: 0 0 0.65rem;
+}
+.inventory-weight-track i {
+  display: block;
+  height: 100%;
+  background: var(--ui-accent);
+  transition: width 0.2s;
+}
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-content: start;
+  gap: 0.5rem;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 0;
+}
+.inventory-slot {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 1 / 1.08;
+  padding: 0.8rem 0 0;
+  background: var(--ui-inventory-empty);
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  color: var(--ui-text);
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  touch-action: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.inventory-slot.has-item {
+  background: var(--ui-inventory-cell);
+  border-color: var(--ui-glass-edge);
+  box-shadow: inset 0 1px #ffffff09;
+  text-shadow: 0 1px 3px #0008;
+  cursor: grab;
+}
+.inventory-slot.has-item:hover {
+  border-color: var(--ui-line-strong);
+  background: var(--ui-inventory-cell);
+  box-shadow: inset 0 0 0 1px var(--ui-hover);
+}
+.inventory-slot.is-selected,
+.inventory-slot.is-selected:hover,
+.inventory-slot.is-drop-target {
+  border-color: var(--ui-accent);
+  color: var(--ui-text);
+  box-shadow: inset 0 0 0 1px var(--ui-line-strong);
+}
+.inventory-slot.is-drop-target {
+  border-style: dashed;
+}
+/* Pending server writes stay locked without fading or moving the grid. */
+.inventory-slot:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.inventory-slot:not(:disabled):active {
+  transform: none;
+}
+.inventory-slot.is-drag-source {
+  background: var(--ui-inventory-empty);
+  border-color: var(--ui-line-strong);
+  border-style: dashed;
+  box-shadow: none;
+}
+.inventory-slot.is-drag-source > :not(.inventory-slot-number),
+.inventory-slot.is-pending-target > :not(.inventory-slot-number) {
+  visibility: hidden;
+}
+.inventory-slot-number {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.4rem;
+  font-size: 0.52rem;
+  color: var(--ui-muted);
+  opacity: 0.55;
+}
+.inventory-slot-count {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.32rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+}
+.inventory-slot-count small {
+  font-size: 0.48rem;
+  font-weight: 400;
+  color: var(--ui-muted);
+}
+.inventory-slot svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto 0 0.45rem;
+  color: var(--ui-text);
+  flex-shrink: 0;
+  filter: drop-shadow(0 0.15rem 0.25rem #0004);
+}
+.inventory-item-label {
+  font-size: 0.69rem;
+  line-height: 1.25;
+  min-height: 3.3em;
+  width: 100%;
+  padding: 0.4em 0.3em;
+  background: var(--ui-inventory-label);
+  border-top: 1px solid var(--ui-line);
+  max-width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+.inventory-notice {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: min(34rem, 90vw);
+  color: var(--ui-text);
+  font-size: var(--ui-label);
+  line-height: 1.5;
+  padding: 0.65rem 0.75rem;
+  margin: 0;
+  border-left: 0.15rem solid var(--ui-accent);
+  background: var(--ui-surface);
+  flex-shrink: 0;
+}
+.inventory-outside-hint {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--ui-surface);
+  padding: 0.65rem 1rem;
+  font-size: var(--ui-label);
+  color: var(--ui-warning);
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.inventory-outside-hint svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.inventory-backdrop.is-dragging .inventory-outside-hint {
+  opacity: 1;
+}
+.inventory-context {
+  position: fixed;
+  z-index: 10;
+  width: min(21rem, calc(100vw - 1rem));
+  max-height: calc(100vh - 1rem);
+  overflow-y: auto;
+  padding: 0.5rem;
+  color: var(--ui-text);
+  background: var(--ui-surface-solid);
+  border: 1px solid var(--ui-line);
+  border-top: 1px solid var(--ui-line-strong);
+  box-shadow: 0 0.5rem 2rem #0005;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.inventory-drag-ghost {
+  position: fixed;
+  z-index: 20;
+  box-shadow: 0 0.5rem 1.2rem #0005;
+  pointer-events: none;
+  transition: none;
+}
+.inventory-backdrop.is-dragging { cursor: grabbing; }
+.inventory-context > header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 0.4rem 0.9rem;
+  border-bottom: 1px solid var(--ui-line);
+}
+.inventory-context > header > div {
+  flex: 1;
+  min-width: 0;
+}
+.inventory-context strong {
+  display: block;
+  font-size: var(--ui-body);
+  overflow-wrap: anywhere;
+}
+.inventory-context small {
+  display: block;
+  font-size: var(--ui-caption);
+  color: var(--ui-muted);
+  margin-top: 0.2rem;
+}
+.inventory-context button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.75rem 0.65rem;
+  background: transparent;
+  border-radius: var(--ui-radius);
+  text-align: left;
+  font-size: var(--ui-body);
+}
+.inventory-context button:not(:disabled):hover,
+.inventory-context button[aria-expanded="true"] {
+  background: var(--ui-selected);
+  color: var(--ui-ink);
+}
+.inventory-context button:not(:disabled):hover small {
+  color: var(--ui-selected-muted);
+}
+.inventory-context svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+.inventory-context > header > svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--ui-accent);
+}
+.inventory-context > header > button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.4rem;
+  flex-shrink: 0;
+}
+.inventory-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.5rem;
+  font-size: var(--ui-label);
+  color: var(--ui-muted);
+}
+.inventory-quantity input {
+  width: 4.5rem;
+  margin-left: auto;
+  border: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-row);
+  color: var(--ui-text);
+  padding: 0.4rem 0.5rem;
+}
+.inventory-quantity button {
+  width: auto;
+  padding: 0.4rem 0.6rem;
+  font-size: var(--ui-label);
+}
+.inventory-context-hint {
+  padding: 0.6rem 0.5rem;
+  font-size: var(--ui-label);
+  line-height: 1.5;
+  color: var(--ui-muted);
+}
+.inventory-tooltip {
+  position: fixed;
+  z-index: 30;
+  pointer-events: none;
+  display: grid;
+  gap: 0.35rem;
+  min-width: 11rem;
+  max-width: min(20rem, 85vw);
+  padding: 0.8rem 1rem;
+  background: var(--ui-surface-solid);
+  border-top: 2px solid var(--ui-accent);
+  color: var(--ui-text);
+  font-size: var(--ui-label);
+  box-shadow: 0 0.3rem 1rem #0005;
+}
+.inventory-tooltip small { color: var(--ui-muted); margin-bottom: 0.2rem; }
+.inventory-tooltip span { padding-left: 0.55rem; border-left: 1px solid var(--ui-accent); }
+.inventory-attachment-options { border-block: 1px solid var(--ui-line); }
+.inventory-attachment-options button span { flex: 1; text-align: left; }
+.inventory-recipients {
+  margin: 0.3rem 0;
+  border-block: 1px solid var(--ui-line);
+}
+.inventory-recipients button span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.inventory-recipients button small {
+  white-space: nowrap;
+}
+.inventory-context .inventory-context-apply {
+  margin-top: 0.35rem;
+  border-top: 1px solid var(--ui-line);
+  font-size: var(--ui-label);
+  color: var(--ui-muted);
+}
+@media (max-width: 1400px) {
+  .inventory-backdrop {
+    padding: 4vh 3vw;
+  }
+  .inventory-shell {
+    max-height: min(42rem, 90vh);
+  }
+  .inventory-slot svg {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+@media (max-width: 850px) {
+  .inventory-shell {
+    max-height: 90vh;
+    gap: 0.45rem;
+  }
+  .inventory-store-heading {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .inventory-store h2 {
+    flex-basis: calc(100% - 3rem);
+    font-size: 1rem;
+  }
+  .inventory-weight {
+    align-items: start;
+    margin-right: auto;
+  }
+  .inventory-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@keyframes inventory-arrive {
+  from { opacity: 0; transform: translateY(0.4rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .inventory-shell { animation: none; }
+  .inventory-slot, .inventory-weight-track i { transition: none; }
+}

@@ -4,6 +4,7 @@ game 'gta5'
 author 'Project team'
 description 'Shared foundation for project-owned resources'
 version '0.1.0'
+files { 'lib/portrait_camera.lua' }
 
 shared_scripts {
     '@ox_lib/init.lua',

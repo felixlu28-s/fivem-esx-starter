@@ -27,5 +27,51 @@ jobs:
       - name: Run static checks
         run: npm run check
 
+      - name: Install Lua test runtime
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.4
+
+      - name: Test character validation and server boundaries
+        run: |
+          lua5.4 tests/characters.lua
+          lua5.4 tests/character-client.lua
+          lua5.4 tests/loading-client.lua
+          lua5.4 tests/creator.lua
+
+      - name: Test input bindings, fitness and NPC cleanup
+        run: |
+          lua5.4 tests/input-player.lua
+          lua5.4 tests/interaction.lua
+          lua5.4 tests/hud.lua
+          lua5.4 tests/ui-toggle.lua
+          lua5.4 tests/world-clock.lua
+          lua5.4 tests/npc-social.lua
+          lua5.4 tests/phone.lua
+          lua5.4 tests/player-profile.lua
+
+      - name: Test ESX organization permissions and character isolation
+        run: lua5.4 tests/organizations.lua
+
+      - name: Test NativeUI ownership, navigation and callbacks
+        run: |
+          lua5.4 tests/nativeui.lua
+          lua5.4 tests/admin.lua
+          lua5.4 tests/admin-client.lua
+
+      - name: Test inventory transactions and capacity rules
+        run: |
+          lua5.4 tests/inventory.lua
+          lua5.4 tests/clothing.lua
+          lua5.4 tests/clothing-client.lua
+          lua5.4 tests/inventory-server.lua
+          lua5.4 tests/inventory-client.lua
+          lua5.4 tests/inventory-ground-client.lua
+          lua5.4 tests/inventory-ammo-scale.lua
+          lua5.4 tests/inventory-ammo-stacks.lua
+          lua5.4 tests/inventory-admin-client.lua
+          lua5.4 tests/commerce.lua
+          lua5.4 tests/weaponshop-client.lua
+
       - name: Build NUI
         run: npm run ui:build

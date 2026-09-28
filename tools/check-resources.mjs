@@ -37,8 +37,15 @@ for (const resourceName of await readdir(resourcesRoot)) {
     failures.push(`${resourceName}: MySQL usage requires @oxmysql/lib/MySQL.lua in server_scripts`);
   }
 
-  if (/RegisterNetEvent\(['\"](?!rp_)/.test(resourceLua)) {
-    failures.push(`${resourceName}: found a RegisterNetEvent that is not prefixed with rp_`);
+  for (const [, eventName] of resourceLua.matchAll(/\bRegisterNetEvent\s*\(\s*['"]([^'"]+)['"]/g)) {
+    // These listen to official ESX lifecycle contracts, not new public APIs.
+    // Cfx requires our own network registration even when ESX also registers it.
+    const esxLifecycleListener = (resourceName === 'rp_characters' && eventName === 'esx:playerLoaded')
+      || (resourceName === 'rp_inventory' && eventName === 'esx:onPlayerSpawn')
+      || (resourceName === 'rp_vehicles' && ['esx:playerLoaded', 'esx:onPlayerLogout'].includes(eventName));
+    if (!eventName.startsWith('rp_') && !esxLifecycleListener) {
+      failures.push(`${resourceName}: RegisterNetEvent '${eventName}' must be prefixed with rp_`);
+    }
   }
 }
 

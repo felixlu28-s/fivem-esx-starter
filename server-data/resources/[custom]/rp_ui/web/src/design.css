@@ -1,0 +1,131 @@
+/* Project UI standard. Domain styles own layout; these tokens own appearance.
+   Reference: gta/nativemnu.jpg + gta/pausemenu.jpg and the character creator. */
+*,
+*::before,
+*::after {
+  -webkit-user-select: none;
+  user-select: none;
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not(
+    [type="button"]
+  ):not([type="submit"]):not([type="reset"]):not([type="color"]):not(
+    [type="file"]
+  ),
+textarea,
+[contenteditable="true"],
+[contenteditable="true"] * {
+  -webkit-user-select: text;
+  user-select: text;
+}
+:root {
+  /* Requested GTA bank identities, confined to ATM screens. */
+  --ui-atm-fleeca: #24714c;
+  --ui-atm-fleeca-deep: #194b36;
+  --ui-atm-maze: #b42a35;
+  --ui-atm-maze-deep: #7d1725;
+  --ui-atm-liberty: #275d91;
+  --ui-atm-liberty-deep: #183d66;
+  --ui-atm-paper: #f0eee4;
+  --ui-atm-white: #fffef7;
+  --ui-atm-ink: #26302d;
+  --ui-atm-muted: #616d66;
+  --ui-atm-line: #dedfd4;
+  --ui-atm-divider: #c5cabe;
+  --ui-atm-metal: linear-gradient(115deg, #a5aaa5, #d0d2c9 42%, #90968f);
+  --ui-atm-metal-edge: #7b827b;
+  --ui-atm-chrome-ink: #303832;
+  --ui-atm-recess: #565e58;
+  --ui-atm-screen-edge: #343e37;
+  --ui-accent: #c4e6c7;
+  --ui-text: #f0f2ec;
+  --ui-muted: #b0bbb3;
+  --ui-dim: #8c9a90;
+  --ui-ink: #19251e;
+  --ui-surface: #111817eb;
+  --ui-surface-solid: #141b18;
+  --ui-surface-raised: #202a24;
+  --ui-hud-surface: linear-gradient(110deg, #11181770, #111817b0);
+  --ui-glass-panel: linear-gradient(135deg, #1118178c, #11181745);
+  --ui-glass-header: linear-gradient(110deg, #11181799, #23352f66);
+  --ui-glass-cell: linear-gradient(145deg, #23352f70, #1118178c);
+  --ui-glass-empty: #11181726;
+  --ui-glass-edge: #f0f2ec24;
+  --ui-glass-shadow: 0 1rem 3rem #00000020;
+  --ui-inventory-header: linear-gradient(100deg, #202a27ed, #17201de0);
+  --ui-inventory-cell: linear-gradient(145deg, #35413aeb, #1e2824e8);
+  --ui-inventory-empty: #17201db8;
+  --ui-inventory-label: #11181760;
+  --ui-native-banner: linear-gradient(110deg, #18362e, #3c6855 70%, #668777);
+  --ui-header: linear-gradient(110deg, #23352ff2, #111a17ef);
+  --ui-row: #ffffff06;
+  --ui-hover: #c4e6c718;
+  --ui-selected: #edf1e7;
+  --ui-selected-muted: #405346;
+  --ui-line: #ffffff1c;
+  --ui-line-strong: #c4e6c759;
+  --ui-warning: #f0c28e;
+  --ui-warning-surface: #503722;
+  --ui-danger: #efb7a9;
+  --ui-danger-surface: #402b27;
+  --ui-free: #b9ebc3;
+  --ui-free-surface: #244931;
+  --ui-dialog-scrim: #050b0866;
+  --ui-radius: 0.15rem;
+  --ui-gap: 0.55rem;
+  --ui-rule: 0.2rem;
+  --ui-space: 1.25rem;
+  --ui-focus: 0.125rem solid var(--ui-accent);
+  --ui-caption: 0.65rem;
+  --ui-label: 0.75rem;
+  --ui-body: 0.85rem;
+  --mint: var(--ui-accent);
+  --muted: var(--ui-muted);
+  --line: var(--ui-line);
+  --panel: var(--ui-surface);
+}
+.ui-icon {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.ui-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.ui-title > .ui-icon {
+  width: 1.65rem;
+  height: 1.65rem;
+  color: var(--ui-accent);
+}
+.ui-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ui-inline .ui-icon {
+  width: 1rem;
+  height: 1rem;
+}
+.ui-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+:where(button, input, select, textarea, summary, a):focus-visible {
+  outline: var(--ui-focus);
+  outline-offset: 0.2rem;
+}
+:where(input, select, textarea) {
+  color-scheme: dark;
+}
+:where(.menu-shell, .inventory-shell, .character-shell, .studio-shell) {
+  font-variant-numeric: tabular-nums;
+  scrollbar-color: #647d69 transparent;
+  scrollbar-width: thin;
+}
+
+/* Original GTA cutouts: transparent, same artwork in shops, inventory and drag tiles. */
+.catalog-image { display: block; max-width: 100%; max-height: 100%; pointer-events: none; user-select: none; }

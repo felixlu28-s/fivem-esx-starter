@@ -7,7 +7,9 @@ const dataRoot = join(projectRoot, 'server-data');
 const failures = [];
 const requiredOrder = [
   'spawnmanager', 'baseevents', 'oxmysql', 'ox_lib', 'esx_lib',
-  'es_extended', 'skinchanger', 'rp_core', 'rp_characters', 'rp_ui',
+  'es_extended', 'skinchanger', 'rp_core', 'rp_ui', 'rp_nativeui', 'rp_inventory',
+  'cron', 'esx_addonaccount', 'esx_addoninventory', 'esx_datastore', 'esx_society',
+  'rp_characters', 'rp_player', 'rp_organizations', 'rp_commerce', 'rp_phone', 'rp_vehicles', 'rp_banking',
 ];
 let config;
 try {
@@ -20,6 +22,11 @@ try {
 // Only inspect resource names; never print configuration values or credentials.
 const starts = [...config.matchAll(/^\s*(?:ensure|start)\s+["']?([\w-]+)["']?\s*(?:#.*)?$/gm)]
   .map((match) => match[1]);
+const inventoryAccounts = /^\s*set\s+inventory:accounts\s+"\[\]"\s*(?:#.*)?$/m.exec(config);
+if (!inventoryAccounts || inventoryAccounts.index > config.indexOf('ensure es_extended')) failures.push('server.cfg: set inventory:accounts "[]" must precede es_extended (ESX owns cash and bank accounts)');
+if (!/^\s*set\s+onesync_population\s+"?false"?\s*(?:#.*)?$/m.test(config)) failures.push('server.cfg: set onesync_population false is required for an NPC-free world');
+if (!/^\s*add_ace\s+resource\.rp_organizations\s+command\.save\s+allow\s*(?:#.*)?$/m.test(config)) failures.push('server.cfg: rp_organizations requires command.save permission for standard ESX persistence');
+if (!/^\s*add_ace\s+resource\.rp_commerce\s+command\.save\s+allow\s*(?:#.*)?$/m.test(config)) failures.push('server.cfg: rp_commerce requires command.save permission for confirmed ESX payments');
 let previousIndex = -1;
 for (const resource of requiredOrder) {
   const index = starts.indexOf(resource);
@@ -45,6 +52,7 @@ async function collectResources(directory) {
   }
 }
 await collectResources(join(dataRoot, 'resources'));
+if (resources.has('ox_inventory')) failures.push('Remove the competing ox_inventory resource directory: rp_inventory provides the ESX bridge alias');
 for (const resource of requiredOrder) {
   const path = resources.get(resource);
   try {
@@ -55,10 +63,13 @@ for (const resource of requiredOrder) {
   }
 }
 
-// ESX detects multicharacter by folder presence, even when it is not ensured.
-if (resources.has('esx_multicharacter')) {
-  failures.push('esx_multicharacter is installed: this starter currently supports ESX single-character login only');
+for (const conflicting of ['esx_multicharacter', 'esx_identity', 'esx_skin']) {
+  if (starts.includes(conflicting)) failures.push(`${conflicting}: conflicts with rp_characters login/creator`);
 }
+const characterManifest = await readFile(join(dataRoot, 'resources', '[custom]', 'rp_characters', 'fxmanifest.lua'), 'utf8');
+if (!characterManifest.includes("provide 'esx_multicharacter'")) failures.push('rp_characters: missing ESX multicharacter provider alias');
+const inventoryManifest = await readFile(join(dataRoot, 'resources', '[custom]', 'rp_inventory', 'fxmanifest.lua'), 'utf8');
+if (!inventoryManifest.includes("provide 'ox_inventory'")) failures.push('rp_inventory: missing ESX custom-inventory provider alias');
 for (const [resource, file] of [
   ['esx_lib', 'imports.lua'],
   ['skinchanger', 'client/main.lua'],

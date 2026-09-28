@@ -10,6 +10,8 @@ sets locale "de-DE"
 
 sv_maxclients 48
 set onesync on
+set onesync_population false
+setr rp_input_profile "fivem-esx-starter"
 
 set mysql_connection_string "mysql://fivem:CHANGE_ME@127.0.0.1:3306/fivem?charset=utf8mb4"
 
@@ -18,14 +20,43 @@ ensure baseevents
 ensure oxmysql
 ensure ox_lib
 ensure esx_lib
+set inventory:accounts "[]"
 ensure es_extended
 ensure skinchanger
 
-# ESX owns the single-character login and spawn flow. skinchanger is required.
-# Add selected ESX resources here in explicit order; do not enable a second spawn flow.
+# rp_characters provides esx_multicharacter. Do not start esx_multicharacter or esx_identity.
+# Always fully restart after switching between single and multiple characters.
 
 ensure rp_core
-ensure rp_characters
 ensure rp_ui
+setr sv_showBusySpinnerOnLoadingScreen false
+ensure rp_nativeui
+ensure rp_inventory
+# ESX addoninventory calls RegisterStash during startup; its provider must exist first.
+ensure cron
+ensure esx_addonaccount
+ensure esx_addoninventory
+ensure esx_datastore
+ensure esx_society
+ensure rp_characters
+ensure rp_player
+ensure rp_organizations
+ensure rp_commerce
+ensure rp_admin
+ensure rp_phone
+ensure rp_vehicles
+ensure rp_banking
+add_ace resource.rp_banking command.save allow
+add_ace resource.rp_commerce command.save allow
+
+# ESX remains responsible for saving online characters after job/account changes.
+add_ace resource.rp_organizations command.save allow
+# ESX group.admin can manage every organization. Job bosses manage their own team.
+add_ace group.admin rp.organizations.admin allow
+
+# Optional: permit your admin group to change account character limits.
+# add_ace group.admin command.rp_character_slots allow
 
 sv_licenseKey "CHANGE_ME"
+
+add_ace group.admin rp.inventory.test allow

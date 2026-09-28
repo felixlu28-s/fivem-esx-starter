@@ -1,0 +1,3191 @@
+[
+  {
+    "skin": {
+      "eyebrows_6": 0,
+      "jaw_1": 0,
+      "sun_1": 0,
+      "bags_1": 0,
+      "eye_squint": 0,
+      "bodyb_1": -1,
+      "tshirt_2": 0,
+      "chest_3": 0,
+      "chain_2": 0,
+      "blush_3": 0,
+      "nose_4": 0,
+      "helmet_2": 0,
+      "glasses_1": -1,
+      "arms": 0,
+      "beard_2": 0,
+      "blush_1": 0,
+      "complexion_2": 0,
+      "ears_1": -1,
+      "torso_1": 0,
+      "eyebrows_4": 0,
+      "face_md_weight": 50,
+      "sex": 0,
+      "eye_color": 0,
+      "bodyb_4": 0,
+      "decals_2": 0,
+      "bodyb_3": -1,
+      "blemishes_1": 0,
+      "bracelets_1": -1,
+      "glasses_2": 0,
+      "arms_2": 0,
+      "bodyb_2": 0,
+      "watches_2": 0,
+      "chest_2": 0,
+      "eyebrows_2": 10,
+      "moles_2": 0,
+      "moles_1": 0,
+      "lipstick_4": 0,
+      "makeup_4": 0,
+      "bracelets_2": 0,
+      "lipstick_3": 0,
+      "nose_2": 0,
+      "face_g_weight": 0,
+      "lip_thickness": 0,
+      "beard_4": 0,
+      "cheeks_1": 0,
+      "sun_2": 0,
+      "complexion_1": 0,
+      "blush_2": 0,
+      "shoes_1": 1,
+      "hair_2": 0,
+      "makeup_3": 0,
+      "lipstick_1": 0,
+      "eyebrows_3": 0,
+      "grandparents": 0,
+      "mom": 21,
+      "eyebrows_5": 0,
+      "makeup_1": 0,
+      "nose_6": 0,
+      "bags_2": 0,
+      "shoes_2": 0,
+      "chin_1": 0,
+      "hair_color_2": 0,
+      "ears_2": 0,
+      "age_2": 0,
+      "age_1": 0,
+      "pants_1": 0,
+      "chest_1": 0,
+      "jaw_2": 0,
+      "watches_1": -1,
+      "hair_1": 0,
+      "hair_color_1": 0,
+      "tshirt_1": 15,
+      "eyebrows_1": 0,
+      "skin_md_weight": 50,
+      "makeup_2": 0,
+      "beard_3": 0,
+      "bproof_1": 0,
+      "neck_thickness": 0,
+      "dad": 0,
+      "nose_5": 0,
+      "chin_3": 0,
+      "chin_2": 0,
+      "mask_1": 0,
+      "cheeks_3": 0,
+      "cheeks_2": 0,
+      "nose_1": 0,
+      "lipstick_2": 0,
+      "decals_1": 0,
+      "chin_4": 0,
+      "chain_1": 0,
+      "bproof_2": 0,
+      "torso_2": 0,
+      "nose_3": 0,
+      "mask_2": 0,
+      "beard_1": 0,
+      "blemishes_2": 0,
+      "pants_2": 0,
+      "helmet_1": -1
+    },
+    "fields": [
+      {
+        "key": "sex",
+        "label": "Körpermodell",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 1,
+        "color": false
+      },
+      {
+        "key": "mom",
+        "label": "Mutter",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 45,
+        "color": false,
+        "options": [
+          {
+            "value": 21,
+            "label": "Hannah"
+          },
+          {
+            "value": 22,
+            "label": "Audrey"
+          },
+          {
+            "value": 23,
+            "label": "Jasmine"
+          },
+          {
+            "value": 24,
+            "label": "Giselle"
+          },
+          {
+            "value": 25,
+            "label": "Amelia"
+          },
+          {
+            "value": 26,
+            "label": "Isabella"
+          },
+          {
+            "value": 27,
+            "label": "Zoe"
+          },
+          {
+            "value": 28,
+            "label": "Ava"
+          },
+          {
+            "value": 29,
+            "label": "Camila"
+          },
+          {
+            "value": 30,
+            "label": "Violet"
+          },
+          {
+            "value": 31,
+            "label": "Sophia"
+          },
+          {
+            "value": 32,
+            "label": "Eveline"
+          },
+          {
+            "value": 33,
+            "label": "Nicole"
+          },
+          {
+            "value": 34,
+            "label": "Ashley"
+          },
+          {
+            "value": 35,
+            "label": "Grace"
+          },
+          {
+            "value": 36,
+            "label": "Brianna"
+          },
+          {
+            "value": 37,
+            "label": "Natalie"
+          },
+          {
+            "value": 38,
+            "label": "Olivia"
+          },
+          {
+            "value": 39,
+            "label": "Elizabeth"
+          },
+          {
+            "value": 40,
+            "label": "Charlotte"
+          },
+          {
+            "value": 41,
+            "label": "Emma"
+          },
+          {
+            "value": 45,
+            "label": "Misty"
+          }
+        ]
+      },
+      {
+        "key": "dad",
+        "label": "Vater",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 44,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Benjamin"
+          },
+          {
+            "value": 1,
+            "label": "Daniel"
+          },
+          {
+            "value": 2,
+            "label": "Joshua"
+          },
+          {
+            "value": 3,
+            "label": "Noah"
+          },
+          {
+            "value": 4,
+            "label": "Andrew"
+          },
+          {
+            "value": 5,
+            "label": "Joan"
+          },
+          {
+            "value": 6,
+            "label": "Alex"
+          },
+          {
+            "value": 7,
+            "label": "Isaac"
+          },
+          {
+            "value": 8,
+            "label": "Evan"
+          },
+          {
+            "value": 9,
+            "label": "Ethan"
+          },
+          {
+            "value": 10,
+            "label": "Vincent"
+          },
+          {
+            "value": 11,
+            "label": "Angel"
+          },
+          {
+            "value": 12,
+            "label": "Diego"
+          },
+          {
+            "value": 13,
+            "label": "Adrian"
+          },
+          {
+            "value": 14,
+            "label": "Gabriel"
+          },
+          {
+            "value": 15,
+            "label": "Michael"
+          },
+          {
+            "value": 16,
+            "label": "Santiago"
+          },
+          {
+            "value": 17,
+            "label": "Kevin"
+          },
+          {
+            "value": 18,
+            "label": "Louis"
+          },
+          {
+            "value": 19,
+            "label": "Samuel"
+          },
+          {
+            "value": 20,
+            "label": "Anthony"
+          },
+          {
+            "value": 42,
+            "label": "John"
+          },
+          {
+            "value": 43,
+            "label": "Niko"
+          },
+          {
+            "value": 44,
+            "label": "Claude"
+          }
+        ]
+      },
+      {
+        "key": "grandparents",
+        "label": "Großeltern",
+        "group": "heritage",
+        "section": "Weitere Vererbung",
+        "min": 0,
+        "max": 45,
+        "color": false
+      },
+      {
+        "key": "face_md_weight",
+        "label": "Gesichtsähnlichkeit",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 100,
+        "color": false
+      },
+      {
+        "key": "skin_md_weight",
+        "label": "Hautton-Mischung",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 100,
+        "color": false
+      },
+      {
+        "key": "face_g_weight",
+        "label": "Einfluss der Großeltern",
+        "group": "heritage",
+        "section": "Weitere Vererbung",
+        "min": 0,
+        "max": 100,
+        "color": false
+      },
+      {
+        "key": "nose_1",
+        "label": "Nasenbreite",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_2",
+        "label": "Nasenhöhe",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_3",
+        "label": "Nasenlänge",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_4",
+        "label": "Nasenrücken",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_5",
+        "label": "Nasenspitze",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_6",
+        "label": "Nasenkrümmung",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_5",
+        "label": "Brauenhöhe",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_6",
+        "label": "Brauentiefe",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "cheeks_1",
+        "label": "Wangenknochenhöhe",
+        "group": "face",
+        "section": "Wangen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "cheeks_2",
+        "label": "Wangenknochenbreite",
+        "group": "face",
+        "section": "Wangen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "cheeks_3",
+        "label": "Wangenfülle",
+        "group": "face",
+        "section": "Wangen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eye_squint",
+        "label": "Augenöffnung",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "lip_thickness",
+        "label": "Lippenfülle",
+        "group": "face",
+        "section": "Gesichtsform",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "jaw_1",
+        "label": "Kieferbreite",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "jaw_2",
+        "label": "Kieferform",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_1",
+        "label": "Kinnhöhe",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_2",
+        "label": "Kinntiefe",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_3",
+        "label": "Kinnbreite",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_4",
+        "label": "Kinnform",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "neck_thickness",
+        "label": "Halsbreite",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eye_color",
+        "label": "Augenfarbe",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": 0,
+        "max": 31,
+        "color": false
+      },
+      {
+        "key": "hair_1",
+        "label": "Frisur",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 78,
+        "color": false
+      },
+      {
+        "key": "hair_2",
+        "label": "Frisur · Variante",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 0,
+        "color": false
+      },
+      {
+        "key": "torso_1",
+        "label": "Oberteil",
+        "group": "clothes",
+        "section": "Oberteile",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "T-Shirt"
+          },
+          {
+            "value": 1,
+            "label": "Locker unterwegs"
+          },
+          {
+            "value": 3,
+            "label": "Leichte Jacke"
+          },
+          {
+            "value": 4,
+            "label": "Smart Casual"
+          },
+          {
+            "value": 7,
+            "label": "Blazer"
+          },
+          {
+            "value": 8,
+            "label": "Sportlich"
+          },
+          {
+            "value": 9,
+            "label": "Freizeitjacke"
+          },
+          {
+            "value": 11,
+            "label": "Hemd"
+          },
+          {
+            "value": 12,
+            "label": "Leichtes Hemd"
+          },
+          {
+            "value": 13,
+            "label": "Strick"
+          },
+          {
+            "value": 14,
+            "label": "Urlaubslook"
+          },
+          {
+            "value": 16,
+            "label": "Reisejacke"
+          }
+        ]
+      },
+      {
+        "key": "torso_2",
+        "label": "Oberteil · Variante",
+        "group": "clothes",
+        "section": "Oberteile",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "pants_1",
+        "label": "Hose",
+        "group": "clothes",
+        "section": "Hosen & Unterteile",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Hose 01"
+          },
+          {
+            "value": 1,
+            "label": "Hose 02"
+          },
+          {
+            "value": 2,
+            "label": "Hose 03"
+          },
+          {
+            "value": 3,
+            "label": "Hose 04"
+          },
+          {
+            "value": 4,
+            "label": "Hose 05"
+          },
+          {
+            "value": 5,
+            "label": "Hose 06"
+          },
+          {
+            "value": 7,
+            "label": "Hose 07"
+          },
+          {
+            "value": 8,
+            "label": "Hose 08"
+          },
+          {
+            "value": 9,
+            "label": "Hose 09"
+          },
+          {
+            "value": 10,
+            "label": "Hose 10"
+          },
+          {
+            "value": 12,
+            "label": "Hose 11"
+          },
+          {
+            "value": 14,
+            "label": "Hose 12"
+          }
+        ]
+      },
+      {
+        "key": "pants_2",
+        "label": "Hose · Variante",
+        "group": "clothes",
+        "section": "Hosen & Unterteile",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "shoes_1",
+        "label": "Schuhe",
+        "group": "clothes",
+        "section": "Schuhe",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 1,
+            "label": "Schuhe 01"
+          },
+          {
+            "value": 2,
+            "label": "Schuhe 02"
+          },
+          {
+            "value": 3,
+            "label": "Schuhe 03"
+          },
+          {
+            "value": 4,
+            "label": "Schuhe 04"
+          },
+          {
+            "value": 5,
+            "label": "Schuhe 05"
+          },
+          {
+            "value": 6,
+            "label": "Schuhe 06"
+          },
+          {
+            "value": 7,
+            "label": "Schuhe 07"
+          },
+          {
+            "value": 8,
+            "label": "Schuhe 08"
+          },
+          {
+            "value": 9,
+            "label": "Schuhe 09"
+          },
+          {
+            "value": 10,
+            "label": "Schuhe 10"
+          },
+          {
+            "value": 12,
+            "label": "Schuhe 11"
+          },
+          {
+            "value": 13,
+            "label": "Schuhe 12"
+          }
+        ]
+      },
+      {
+        "key": "shoes_2",
+        "label": "Schuhe · Variante",
+        "group": "clothes",
+        "section": "Schuhe",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "chain_1",
+        "label": "Kette",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Halsaccessoire 01"
+          },
+          {
+            "value": 1,
+            "label": "Halsaccessoire 02"
+          },
+          {
+            "value": 2,
+            "label": "Halsaccessoire 03"
+          },
+          {
+            "value": 3,
+            "label": "Halsaccessoire 04"
+          },
+          {
+            "value": 4,
+            "label": "Halsaccessoire 05"
+          },
+          {
+            "value": 5,
+            "label": "Halsaccessoire 06"
+          },
+          {
+            "value": 6,
+            "label": "Halsaccessoire 07"
+          },
+          {
+            "value": 7,
+            "label": "Halsaccessoire 08"
+          },
+          {
+            "value": 8,
+            "label": "Halsaccessoire 09"
+          },
+          {
+            "value": 9,
+            "label": "Halsaccessoire 10"
+          },
+          {
+            "value": 10,
+            "label": "Halsaccessoire 11"
+          },
+          {
+            "value": 11,
+            "label": "Halsaccessoire 12"
+          }
+        ]
+      },
+      {
+        "key": "chain_2",
+        "label": "Kette · Variante",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "hair_color_1",
+        "label": "Haarfarbe",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "hair_color_2",
+        "label": "Strähnen",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "helmet_1",
+        "label": "Kopfbedeckung",
+        "group": "accessories",
+        "section": "Kopfbedeckungen",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 2,
+            "label": "Kopfbedeckung 02"
+          },
+          {
+            "value": 4,
+            "label": "Kopfbedeckung 03"
+          },
+          {
+            "value": 5,
+            "label": "Kopfbedeckung 04"
+          },
+          {
+            "value": 6,
+            "label": "Kopfbedeckung 05"
+          },
+          {
+            "value": 7,
+            "label": "Kopfbedeckung 06"
+          },
+          {
+            "value": 12,
+            "label": "Kopfbedeckung 07"
+          },
+          {
+            "value": 13,
+            "label": "Kopfbedeckung 08"
+          },
+          {
+            "value": 14,
+            "label": "Kopfbedeckung 09"
+          },
+          {
+            "value": 15,
+            "label": "Kopfbedeckung 10"
+          },
+          {
+            "value": 16,
+            "label": "Kopfbedeckung 11"
+          },
+          {
+            "value": 17,
+            "label": "Kopfbedeckung 12"
+          },
+          {
+            "value": 18,
+            "label": "Kopfbedeckung 13"
+          }
+        ]
+      },
+      {
+        "key": "helmet_2",
+        "label": "Kopfbedeckung · Variante",
+        "group": "accessories",
+        "section": "Kopfbedeckungen",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "glasses_1",
+        "label": "Brille",
+        "group": "accessories",
+        "section": "Brillen",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Brille 02"
+          },
+          {
+            "value": 1,
+            "label": "Brille 03"
+          },
+          {
+            "value": 2,
+            "label": "Brille 04"
+          },
+          {
+            "value": 3,
+            "label": "Brille 05"
+          },
+          {
+            "value": 4,
+            "label": "Brille 06"
+          },
+          {
+            "value": 5,
+            "label": "Brille 07"
+          },
+          {
+            "value": 7,
+            "label": "Brille 08"
+          },
+          {
+            "value": 8,
+            "label": "Brille 09"
+          },
+          {
+            "value": 9,
+            "label": "Brille 10"
+          },
+          {
+            "value": 10,
+            "label": "Brille 11"
+          },
+          {
+            "value": 11,
+            "label": "Brille 12"
+          },
+          {
+            "value": 12,
+            "label": "Brille 13"
+          }
+        ]
+      },
+      {
+        "key": "glasses_2",
+        "label": "Brille · Variante",
+        "group": "accessories",
+        "section": "Brillen",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "ears_1",
+        "label": "Ohrringe",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Ohrringe 02"
+          },
+          {
+            "value": 1,
+            "label": "Ohrringe 03"
+          },
+          {
+            "value": 2,
+            "label": "Ohrringe 04"
+          },
+          {
+            "value": 3,
+            "label": "Ohrringe 05"
+          },
+          {
+            "value": 4,
+            "label": "Ohrringe 06"
+          },
+          {
+            "value": 5,
+            "label": "Ohrringe 07"
+          }
+        ]
+      },
+      {
+        "key": "ears_2",
+        "label": "Ohrringe · Variante",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "watches_1",
+        "label": "Uhr",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Uhr 02"
+          },
+          {
+            "value": 1,
+            "label": "Uhr 03"
+          },
+          {
+            "value": 2,
+            "label": "Uhr 04"
+          },
+          {
+            "value": 3,
+            "label": "Uhr 05"
+          },
+          {
+            "value": 4,
+            "label": "Uhr 06"
+          },
+          {
+            "value": 5,
+            "label": "Uhr 07"
+          },
+          {
+            "value": 6,
+            "label": "Uhr 08"
+          },
+          {
+            "value": 7,
+            "label": "Uhr 09"
+          },
+          {
+            "value": 8,
+            "label": "Uhr 10"
+          },
+          {
+            "value": 9,
+            "label": "Uhr 11"
+          },
+          {
+            "value": 10,
+            "label": "Uhr 12"
+          },
+          {
+            "value": 11,
+            "label": "Uhr 13"
+          }
+        ]
+      },
+      {
+        "key": "watches_2",
+        "label": "Uhr · Variante",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "bracelets_1",
+        "label": "Armband",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Armband 02"
+          },
+          {
+            "value": 1,
+            "label": "Armband 03"
+          },
+          {
+            "value": 2,
+            "label": "Armband 04"
+          },
+          {
+            "value": 3,
+            "label": "Armband 05"
+          },
+          {
+            "value": 4,
+            "label": "Armband 06"
+          },
+          {
+            "value": 5,
+            "label": "Armband 07"
+          },
+          {
+            "value": 6,
+            "label": "Armband 08"
+          }
+        ]
+      },
+      {
+        "key": "bracelets_2",
+        "label": "Armband · Variante",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "blemishes_1",
+        "label": "Hautunreinheiten",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 23,
+        "color": false
+      },
+      {
+        "key": "blemishes_2",
+        "label": "Hautunreinheiten · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "beard_1",
+        "label": "Bart",
+        "group": "hair",
+        "section": "Bart",
+        "min": 0,
+        "max": 28,
+        "color": false
+      },
+      {
+        "key": "beard_2",
+        "label": "Bart · Stärke",
+        "group": "hair",
+        "section": "Bart",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "beard_3",
+        "label": "Bart · Farbe",
+        "group": "hair",
+        "section": "Bart",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "beard_4",
+        "label": "Bart · Zweitfarbe",
+        "group": "hair",
+        "section": "Bart",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "eyebrows_1",
+        "label": "Augenbrauen",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 33,
+        "color": false
+      },
+      {
+        "key": "eyebrows_2",
+        "label": "Augenbrauen · Stärke",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_3",
+        "label": "Augenbrauen · Farbe",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "eyebrows_4",
+        "label": "Augenbrauen · Zweitfarbe",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "age_1",
+        "label": "Alterung",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 14,
+        "color": false
+      },
+      {
+        "key": "age_2",
+        "label": "Alterung · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "makeup_1",
+        "label": "Make-up",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 74,
+        "color": false
+      },
+      {
+        "key": "makeup_2",
+        "label": "Make-up · Stärke",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "makeup_3",
+        "label": "Make-up · Farbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "makeup_4",
+        "label": "Make-up · Zweitfarbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "blush_1",
+        "label": "Rouge",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 6,
+        "color": false
+      },
+      {
+        "key": "blush_2",
+        "label": "Rouge · Stärke",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "blush_3",
+        "label": "Rouge · Farbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "complexion_1",
+        "label": "Teint",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "complexion_2",
+        "label": "Teint · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "sun_1",
+        "label": "Sonnenschäden",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "sun_2",
+        "label": "Sonnenschäden · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "lipstick_1",
+        "label": "Lippenstift",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 9,
+        "color": false
+      },
+      {
+        "key": "lipstick_2",
+        "label": "Lippenstift · Stärke",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "lipstick_3",
+        "label": "Lippenstift · Farbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "lipstick_4",
+        "label": "Lippenstift · Zweitfarbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "moles_1",
+        "label": "Sommersprossen",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 17,
+        "color": false
+      },
+      {
+        "key": "moles_2",
+        "label": "Sommersprossen · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chest_1",
+        "label": "Brustbehaarung",
+        "group": "skin",
+        "section": "Körperbehaarung",
+        "min": 0,
+        "max": 16,
+        "color": false
+      },
+      {
+        "key": "chest_2",
+        "label": "Brustbehaarung · Stärke",
+        "group": "skin",
+        "section": "Körperbehaarung",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chest_3",
+        "label": "Brustbehaarung · Farbe",
+        "group": "skin",
+        "section": "Körperbehaarung",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "bodyb_1",
+        "label": "Körpermerkmale",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": -1,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "bodyb_2",
+        "label": "Körpermerkmale · Stärke",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "bodyb_3",
+        "label": "Weitere Körpermerkmale",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": -1,
+        "max": 1,
+        "color": false
+      },
+      {
+        "key": "bodyb_4",
+        "label": "Weitere Körpermerkmale · Stärke",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": 0,
+        "max": 10,
+        "color": false
+      }
+    ],
+    "tops": {
+      "1": {
+        "label": "T-Shirt",
+        "value": 0,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 0
+        }
+      },
+      "2": {
+        "label": "Locker unterwegs",
+        "value": 1,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 0
+        }
+      },
+      "3": {
+        "label": "Leichte Jacke",
+        "value": 3,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 1
+        }
+      },
+      "4": {
+        "label": "Smart Casual",
+        "value": 4,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 1
+        }
+      },
+      "5": {
+        "label": "Blazer",
+        "value": 7,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 1
+        }
+      },
+      "6": {
+        "label": "Sportlich",
+        "value": 8,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 8
+        }
+      },
+      "7": {
+        "label": "Freizeitjacke",
+        "value": 9,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 0
+        }
+      },
+      "8": {
+        "label": "Hemd",
+        "value": 11,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 11
+        }
+      },
+      "9": {
+        "label": "Leichtes Hemd",
+        "value": 12,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 12
+        }
+      },
+      "10": {
+        "label": "Strick",
+        "value": 13,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 11
+        }
+      },
+      "11": {
+        "label": "Urlaubslook",
+        "value": 14,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 4
+        }
+      },
+      "12": {
+        "label": "Reisejacke",
+        "value": 16,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 0
+        }
+      }
+    }
+  },
+  {
+    "skin": {
+      "eyebrows_6": 0,
+      "jaw_1": 0,
+      "sun_1": 0,
+      "bags_1": 0,
+      "eye_squint": 0,
+      "bodyb_1": -1,
+      "tshirt_2": 0,
+      "chest_3": 0,
+      "chain_2": 0,
+      "blush_3": 0,
+      "nose_4": 0,
+      "helmet_2": 0,
+      "glasses_1": -1,
+      "arms": 0,
+      "beard_2": 0,
+      "blush_1": 0,
+      "complexion_2": 0,
+      "ears_1": -1,
+      "torso_1": 0,
+      "eyebrows_4": 0,
+      "face_md_weight": 50,
+      "sex": 1,
+      "eye_color": 0,
+      "bodyb_4": 0,
+      "decals_2": 0,
+      "bodyb_3": -1,
+      "blemishes_1": 0,
+      "bracelets_1": -1,
+      "glasses_2": 0,
+      "arms_2": 0,
+      "bodyb_2": 0,
+      "watches_2": 0,
+      "chest_2": 0,
+      "eyebrows_2": 10,
+      "moles_2": 0,
+      "moles_1": 0,
+      "lipstick_4": 0,
+      "makeup_4": 0,
+      "bracelets_2": 0,
+      "lipstick_3": 0,
+      "nose_2": 0,
+      "face_g_weight": 0,
+      "lip_thickness": 0,
+      "beard_4": 0,
+      "cheeks_1": 0,
+      "sun_2": 0,
+      "complexion_1": 0,
+      "blush_2": 0,
+      "shoes_1": 0,
+      "hair_2": 0,
+      "makeup_3": 0,
+      "lipstick_1": 0,
+      "eyebrows_3": 0,
+      "grandparents": 0,
+      "mom": 21,
+      "eyebrows_5": 0,
+      "makeup_1": 0,
+      "nose_6": 0,
+      "bags_2": 0,
+      "shoes_2": 0,
+      "chin_1": 0,
+      "hair_color_2": 0,
+      "ears_2": 0,
+      "age_2": 0,
+      "age_1": 0,
+      "pants_1": 0,
+      "chest_1": 0,
+      "jaw_2": 0,
+      "watches_1": -1,
+      "hair_1": 4,
+      "hair_color_1": 0,
+      "tshirt_1": 15,
+      "eyebrows_1": 0,
+      "skin_md_weight": 50,
+      "makeup_2": 0,
+      "beard_3": 0,
+      "bproof_1": 0,
+      "neck_thickness": 0,
+      "dad": 0,
+      "nose_5": 0,
+      "chin_3": 0,
+      "chin_2": 0,
+      "mask_1": 0,
+      "cheeks_3": 0,
+      "cheeks_2": 0,
+      "nose_1": 0,
+      "lipstick_2": 0,
+      "decals_1": 0,
+      "chin_4": 0,
+      "chain_1": 0,
+      "bproof_2": 0,
+      "torso_2": 0,
+      "nose_3": 0,
+      "mask_2": 0,
+      "beard_1": 0,
+      "blemishes_2": 0,
+      "pants_2": 0,
+      "helmet_1": -1
+    },
+    "fields": [
+      {
+        "key": "sex",
+        "label": "Körpermodell",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 1,
+        "color": false
+      },
+      {
+        "key": "mom",
+        "label": "Mutter",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 45,
+        "color": false,
+        "options": [
+          {
+            "value": 21,
+            "label": "Hannah"
+          },
+          {
+            "value": 22,
+            "label": "Audrey"
+          },
+          {
+            "value": 23,
+            "label": "Jasmine"
+          },
+          {
+            "value": 24,
+            "label": "Giselle"
+          },
+          {
+            "value": 25,
+            "label": "Amelia"
+          },
+          {
+            "value": 26,
+            "label": "Isabella"
+          },
+          {
+            "value": 27,
+            "label": "Zoe"
+          },
+          {
+            "value": 28,
+            "label": "Ava"
+          },
+          {
+            "value": 29,
+            "label": "Camila"
+          },
+          {
+            "value": 30,
+            "label": "Violet"
+          },
+          {
+            "value": 31,
+            "label": "Sophia"
+          },
+          {
+            "value": 32,
+            "label": "Eveline"
+          },
+          {
+            "value": 33,
+            "label": "Nicole"
+          },
+          {
+            "value": 34,
+            "label": "Ashley"
+          },
+          {
+            "value": 35,
+            "label": "Grace"
+          },
+          {
+            "value": 36,
+            "label": "Brianna"
+          },
+          {
+            "value": 37,
+            "label": "Natalie"
+          },
+          {
+            "value": 38,
+            "label": "Olivia"
+          },
+          {
+            "value": 39,
+            "label": "Elizabeth"
+          },
+          {
+            "value": 40,
+            "label": "Charlotte"
+          },
+          {
+            "value": 41,
+            "label": "Emma"
+          },
+          {
+            "value": 45,
+            "label": "Misty"
+          }
+        ]
+      },
+      {
+        "key": "dad",
+        "label": "Vater",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 44,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Benjamin"
+          },
+          {
+            "value": 1,
+            "label": "Daniel"
+          },
+          {
+            "value": 2,
+            "label": "Joshua"
+          },
+          {
+            "value": 3,
+            "label": "Noah"
+          },
+          {
+            "value": 4,
+            "label": "Andrew"
+          },
+          {
+            "value": 5,
+            "label": "Joan"
+          },
+          {
+            "value": 6,
+            "label": "Alex"
+          },
+          {
+            "value": 7,
+            "label": "Isaac"
+          },
+          {
+            "value": 8,
+            "label": "Evan"
+          },
+          {
+            "value": 9,
+            "label": "Ethan"
+          },
+          {
+            "value": 10,
+            "label": "Vincent"
+          },
+          {
+            "value": 11,
+            "label": "Angel"
+          },
+          {
+            "value": 12,
+            "label": "Diego"
+          },
+          {
+            "value": 13,
+            "label": "Adrian"
+          },
+          {
+            "value": 14,
+            "label": "Gabriel"
+          },
+          {
+            "value": 15,
+            "label": "Michael"
+          },
+          {
+            "value": 16,
+            "label": "Santiago"
+          },
+          {
+            "value": 17,
+            "label": "Kevin"
+          },
+          {
+            "value": 18,
+            "label": "Louis"
+          },
+          {
+            "value": 19,
+            "label": "Samuel"
+          },
+          {
+            "value": 20,
+            "label": "Anthony"
+          },
+          {
+            "value": 42,
+            "label": "John"
+          },
+          {
+            "value": 43,
+            "label": "Niko"
+          },
+          {
+            "value": 44,
+            "label": "Claude"
+          }
+        ]
+      },
+      {
+        "key": "grandparents",
+        "label": "Großeltern",
+        "group": "heritage",
+        "section": "Weitere Vererbung",
+        "min": 0,
+        "max": 45,
+        "color": false
+      },
+      {
+        "key": "face_md_weight",
+        "label": "Gesichtsähnlichkeit",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 100,
+        "color": false
+      },
+      {
+        "key": "skin_md_weight",
+        "label": "Hautton-Mischung",
+        "group": "heritage",
+        "section": "Eltern & Ähnlichkeit",
+        "min": 0,
+        "max": 100,
+        "color": false
+      },
+      {
+        "key": "face_g_weight",
+        "label": "Einfluss der Großeltern",
+        "group": "heritage",
+        "section": "Weitere Vererbung",
+        "min": 0,
+        "max": 100,
+        "color": false
+      },
+      {
+        "key": "nose_1",
+        "label": "Nasenbreite",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_2",
+        "label": "Nasenhöhe",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_3",
+        "label": "Nasenlänge",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_4",
+        "label": "Nasenrücken",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_5",
+        "label": "Nasenspitze",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "nose_6",
+        "label": "Nasenkrümmung",
+        "group": "face",
+        "section": "Nase",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_5",
+        "label": "Brauenhöhe",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_6",
+        "label": "Brauentiefe",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "cheeks_1",
+        "label": "Wangenknochenhöhe",
+        "group": "face",
+        "section": "Wangen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "cheeks_2",
+        "label": "Wangenknochenbreite",
+        "group": "face",
+        "section": "Wangen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "cheeks_3",
+        "label": "Wangenfülle",
+        "group": "face",
+        "section": "Wangen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eye_squint",
+        "label": "Augenöffnung",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "lip_thickness",
+        "label": "Lippenfülle",
+        "group": "face",
+        "section": "Gesichtsform",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "jaw_1",
+        "label": "Kieferbreite",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "jaw_2",
+        "label": "Kieferform",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_1",
+        "label": "Kinnhöhe",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_2",
+        "label": "Kinntiefe",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_3",
+        "label": "Kinnbreite",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "chin_4",
+        "label": "Kinnform",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "neck_thickness",
+        "label": "Halsbreite",
+        "group": "face",
+        "section": "Kiefer & Kinn",
+        "min": -10,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eye_color",
+        "label": "Augenfarbe",
+        "group": "face",
+        "section": "Augen & Brauen",
+        "min": 0,
+        "max": 31,
+        "color": false
+      },
+      {
+        "key": "hair_1",
+        "label": "Frisur",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 82,
+        "color": false
+      },
+      {
+        "key": "hair_2",
+        "label": "Frisur · Variante",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 0,
+        "color": false
+      },
+      {
+        "key": "torso_1",
+        "label": "Oberteil",
+        "group": "clothes",
+        "section": "Oberteile",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "T-Shirt"
+          },
+          {
+            "value": 1,
+            "label": "Leichte Jacke"
+          },
+          {
+            "value": 2,
+            "label": "Ärmelloses Top"
+          },
+          {
+            "value": 3,
+            "label": "Freizeitlook"
+          },
+          {
+            "value": 4,
+            "label": "Bluse"
+          },
+          {
+            "value": 5,
+            "label": "Casual"
+          },
+          {
+            "value": 6,
+            "label": "Reisejacke"
+          },
+          {
+            "value": 7,
+            "label": "Hemd"
+          },
+          {
+            "value": 8,
+            "label": "Leichtes Top"
+          },
+          {
+            "value": 9,
+            "label": "Smart Casual"
+          },
+          {
+            "value": 11,
+            "label": "Sommerlook"
+          },
+          {
+            "value": 14,
+            "label": "Sportlich"
+          }
+        ]
+      },
+      {
+        "key": "torso_2",
+        "label": "Oberteil · Variante",
+        "group": "clothes",
+        "section": "Oberteile",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "pants_1",
+        "label": "Hose",
+        "group": "clothes",
+        "section": "Hosen & Unterteile",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Unterteil 01"
+          },
+          {
+            "value": 1,
+            "label": "Unterteil 02"
+          },
+          {
+            "value": 2,
+            "label": "Unterteil 03"
+          },
+          {
+            "value": 3,
+            "label": "Unterteil 04"
+          },
+          {
+            "value": 4,
+            "label": "Unterteil 05"
+          },
+          {
+            "value": 5,
+            "label": "Unterteil 06"
+          },
+          {
+            "value": 6,
+            "label": "Unterteil 07"
+          },
+          {
+            "value": 7,
+            "label": "Unterteil 08"
+          },
+          {
+            "value": 8,
+            "label": "Unterteil 09"
+          },
+          {
+            "value": 9,
+            "label": "Unterteil 10"
+          },
+          {
+            "value": 10,
+            "label": "Unterteil 11"
+          },
+          {
+            "value": 11,
+            "label": "Unterteil 12"
+          }
+        ]
+      },
+      {
+        "key": "pants_2",
+        "label": "Hose · Variante",
+        "group": "clothes",
+        "section": "Hosen & Unterteile",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "shoes_1",
+        "label": "Schuhe",
+        "group": "clothes",
+        "section": "Schuhe",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Schuhe 01"
+          },
+          {
+            "value": 1,
+            "label": "Schuhe 02"
+          },
+          {
+            "value": 2,
+            "label": "Schuhe 03"
+          },
+          {
+            "value": 3,
+            "label": "Schuhe 04"
+          },
+          {
+            "value": 4,
+            "label": "Schuhe 05"
+          },
+          {
+            "value": 5,
+            "label": "Schuhe 06"
+          },
+          {
+            "value": 6,
+            "label": "Schuhe 07"
+          },
+          {
+            "value": 7,
+            "label": "Schuhe 08"
+          },
+          {
+            "value": 8,
+            "label": "Schuhe 09"
+          },
+          {
+            "value": 9,
+            "label": "Schuhe 10"
+          },
+          {
+            "value": 10,
+            "label": "Schuhe 11"
+          },
+          {
+            "value": 11,
+            "label": "Schuhe 12"
+          }
+        ]
+      },
+      {
+        "key": "shoes_2",
+        "label": "Schuhe · Variante",
+        "group": "clothes",
+        "section": "Schuhe",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "chain_1",
+        "label": "Kette",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": 0,
+        "max": 1000,
+        "color": false,
+        "options": [
+          {
+            "value": 0,
+            "label": "Halsaccessoire 01"
+          },
+          {
+            "value": 1,
+            "label": "Halsaccessoire 02"
+          },
+          {
+            "value": 2,
+            "label": "Halsaccessoire 03"
+          },
+          {
+            "value": 3,
+            "label": "Halsaccessoire 04"
+          },
+          {
+            "value": 4,
+            "label": "Halsaccessoire 05"
+          },
+          {
+            "value": 5,
+            "label": "Halsaccessoire 06"
+          },
+          {
+            "value": 6,
+            "label": "Halsaccessoire 07"
+          },
+          {
+            "value": 7,
+            "label": "Halsaccessoire 08"
+          },
+          {
+            "value": 8,
+            "label": "Halsaccessoire 09"
+          },
+          {
+            "value": 9,
+            "label": "Halsaccessoire 10"
+          },
+          {
+            "value": 10,
+            "label": "Halsaccessoire 11"
+          },
+          {
+            "value": 11,
+            "label": "Halsaccessoire 12"
+          }
+        ]
+      },
+      {
+        "key": "chain_2",
+        "label": "Kette · Variante",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "hair_color_1",
+        "label": "Haarfarbe",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "hair_color_2",
+        "label": "Strähnen",
+        "group": "hair",
+        "section": "Frisur & Farbe",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "helmet_1",
+        "label": "Kopfbedeckung",
+        "group": "accessories",
+        "section": "Kopfbedeckungen",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 2,
+            "label": "Kopfbedeckung 02"
+          },
+          {
+            "value": 4,
+            "label": "Kopfbedeckung 03"
+          },
+          {
+            "value": 5,
+            "label": "Kopfbedeckung 04"
+          },
+          {
+            "value": 6,
+            "label": "Kopfbedeckung 05"
+          },
+          {
+            "value": 7,
+            "label": "Kopfbedeckung 06"
+          },
+          {
+            "value": 9,
+            "label": "Kopfbedeckung 07"
+          },
+          {
+            "value": 12,
+            "label": "Kopfbedeckung 08"
+          },
+          {
+            "value": 13,
+            "label": "Kopfbedeckung 09"
+          },
+          {
+            "value": 14,
+            "label": "Kopfbedeckung 10"
+          },
+          {
+            "value": 15,
+            "label": "Kopfbedeckung 11"
+          },
+          {
+            "value": 16,
+            "label": "Kopfbedeckung 12"
+          },
+          {
+            "value": 17,
+            "label": "Kopfbedeckung 13"
+          }
+        ]
+      },
+      {
+        "key": "helmet_2",
+        "label": "Kopfbedeckung · Variante",
+        "group": "accessories",
+        "section": "Kopfbedeckungen",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "glasses_1",
+        "label": "Brille",
+        "group": "accessories",
+        "section": "Brillen",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Brille 02"
+          },
+          {
+            "value": 1,
+            "label": "Brille 03"
+          },
+          {
+            "value": 2,
+            "label": "Brille 04"
+          },
+          {
+            "value": 3,
+            "label": "Brille 05"
+          },
+          {
+            "value": 4,
+            "label": "Brille 06"
+          },
+          {
+            "value": 5,
+            "label": "Brille 07"
+          },
+          {
+            "value": 6,
+            "label": "Brille 08"
+          },
+          {
+            "value": 7,
+            "label": "Brille 09"
+          },
+          {
+            "value": 8,
+            "label": "Brille 10"
+          },
+          {
+            "value": 9,
+            "label": "Brille 11"
+          },
+          {
+            "value": 10,
+            "label": "Brille 12"
+          },
+          {
+            "value": 11,
+            "label": "Brille 13"
+          }
+        ]
+      },
+      {
+        "key": "glasses_2",
+        "label": "Brille · Variante",
+        "group": "accessories",
+        "section": "Brillen",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "ears_1",
+        "label": "Ohrringe",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Ohrringe 02"
+          },
+          {
+            "value": 1,
+            "label": "Ohrringe 03"
+          },
+          {
+            "value": 2,
+            "label": "Ohrringe 04"
+          },
+          {
+            "value": 3,
+            "label": "Ohrringe 05"
+          },
+          {
+            "value": 4,
+            "label": "Ohrringe 06"
+          },
+          {
+            "value": 5,
+            "label": "Ohrringe 07"
+          },
+          {
+            "value": 6,
+            "label": "Ohrringe 08"
+          },
+          {
+            "value": 7,
+            "label": "Ohrringe 09"
+          },
+          {
+            "value": 8,
+            "label": "Ohrringe 10"
+          },
+          {
+            "value": 9,
+            "label": "Ohrringe 11"
+          },
+          {
+            "value": 10,
+            "label": "Ohrringe 12"
+          },
+          {
+            "value": 11,
+            "label": "Ohrringe 13"
+          }
+        ]
+      },
+      {
+        "key": "ears_2",
+        "label": "Ohrringe · Variante",
+        "group": "accessories",
+        "section": "Schmuck",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "watches_1",
+        "label": "Uhr",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Uhr 02"
+          },
+          {
+            "value": 1,
+            "label": "Uhr 03"
+          },
+          {
+            "value": 2,
+            "label": "Uhr 04"
+          },
+          {
+            "value": 3,
+            "label": "Uhr 05"
+          },
+          {
+            "value": 4,
+            "label": "Uhr 06"
+          },
+          {
+            "value": 5,
+            "label": "Uhr 07"
+          },
+          {
+            "value": 6,
+            "label": "Uhr 08"
+          },
+          {
+            "value": 7,
+            "label": "Uhr 09"
+          },
+          {
+            "value": 8,
+            "label": "Uhr 10"
+          },
+          {
+            "value": 9,
+            "label": "Uhr 11"
+          },
+          {
+            "value": 10,
+            "label": "Uhr 12"
+          },
+          {
+            "value": 11,
+            "label": "Uhr 13"
+          }
+        ]
+      },
+      {
+        "key": "watches_2",
+        "label": "Uhr · Variante",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "bracelets_1",
+        "label": "Armband",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": -1,
+        "max": 500,
+        "color": false,
+        "options": [
+          {
+            "value": -1,
+            "label": "Ohne"
+          },
+          {
+            "value": 0,
+            "label": "Armband 02"
+          },
+          {
+            "value": 1,
+            "label": "Armband 03"
+          },
+          {
+            "value": 2,
+            "label": "Armband 04"
+          },
+          {
+            "value": 3,
+            "label": "Armband 05"
+          },
+          {
+            "value": 4,
+            "label": "Armband 06"
+          },
+          {
+            "value": 5,
+            "label": "Armband 07"
+          },
+          {
+            "value": 6,
+            "label": "Armband 08"
+          }
+        ]
+      },
+      {
+        "key": "bracelets_2",
+        "label": "Armband · Variante",
+        "group": "accessories",
+        "section": "Uhren & Armbänder",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "blemishes_1",
+        "label": "Hautunreinheiten",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 23,
+        "color": false
+      },
+      {
+        "key": "blemishes_2",
+        "label": "Hautunreinheiten · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_1",
+        "label": "Augenbrauen",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 33,
+        "color": false
+      },
+      {
+        "key": "eyebrows_2",
+        "label": "Augenbrauen · Stärke",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "eyebrows_3",
+        "label": "Augenbrauen · Farbe",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "eyebrows_4",
+        "label": "Augenbrauen · Zweitfarbe",
+        "group": "hair",
+        "section": "Augenbrauen",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "age_1",
+        "label": "Alterung",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 14,
+        "color": false
+      },
+      {
+        "key": "age_2",
+        "label": "Alterung · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "makeup_1",
+        "label": "Make-up",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 74,
+        "color": false
+      },
+      {
+        "key": "makeup_2",
+        "label": "Make-up · Stärke",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "makeup_3",
+        "label": "Make-up · Farbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "makeup_4",
+        "label": "Make-up · Zweitfarbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "blush_1",
+        "label": "Rouge",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 6,
+        "color": false
+      },
+      {
+        "key": "blush_2",
+        "label": "Rouge · Stärke",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "blush_3",
+        "label": "Rouge · Farbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "complexion_1",
+        "label": "Teint",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "complexion_2",
+        "label": "Teint · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "sun_1",
+        "label": "Sonnenschäden",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "sun_2",
+        "label": "Sonnenschäden · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "lipstick_1",
+        "label": "Lippenstift",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 9,
+        "color": false
+      },
+      {
+        "key": "lipstick_2",
+        "label": "Lippenstift · Stärke",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "lipstick_3",
+        "label": "Lippenstift · Farbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "lipstick_4",
+        "label": "Lippenstift · Zweitfarbe",
+        "group": "skin",
+        "section": "Make-up",
+        "min": 0,
+        "max": 63,
+        "color": true
+      },
+      {
+        "key": "moles_1",
+        "label": "Sommersprossen",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 17,
+        "color": false
+      },
+      {
+        "key": "moles_2",
+        "label": "Sommersprossen · Stärke",
+        "group": "skin",
+        "section": "Hautbild",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "bodyb_1",
+        "label": "Körpermerkmale",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": -1,
+        "max": 11,
+        "color": false
+      },
+      {
+        "key": "bodyb_2",
+        "label": "Körpermerkmale · Stärke",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": 0,
+        "max": 10,
+        "color": false
+      },
+      {
+        "key": "bodyb_3",
+        "label": "Weitere Körpermerkmale",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": -1,
+        "max": 1,
+        "color": false
+      },
+      {
+        "key": "bodyb_4",
+        "label": "Weitere Körpermerkmale · Stärke",
+        "group": "skin",
+        "section": "Körpermerkmale",
+        "min": 0,
+        "max": 10,
+        "color": false
+      }
+    ],
+    "tops": {
+      "1": {
+        "label": "T-Shirt",
+        "value": 0,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 0
+        }
+      },
+      "2": {
+        "label": "Leichte Jacke",
+        "value": 1,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 5
+        }
+      },
+      "3": {
+        "label": "Ärmelloses Top",
+        "value": 2,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 2
+        }
+      },
+      "4": {
+        "label": "Freizeitlook",
+        "value": 3,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 3
+        }
+      },
+      "5": {
+        "label": "Bluse",
+        "value": 4,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 4
+        }
+      },
+      "6": {
+        "label": "Casual",
+        "value": 5,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 4
+        }
+      },
+      "7": {
+        "label": "Reisejacke",
+        "value": 6,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 5
+        }
+      },
+      "8": {
+        "label": "Hemd",
+        "value": 7,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 6
+        }
+      },
+      "9": {
+        "label": "Leichtes Top",
+        "value": 8,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 4
+        }
+      },
+      "10": {
+        "label": "Smart Casual",
+        "value": 9,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 0
+        }
+      },
+      "11": {
+        "label": "Sommerlook",
+        "value": 11,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 4
+        }
+      },
+      "12": {
+        "label": "Sportlich",
+        "value": 14,
+        "skin": {
+          "tshirt_2": 0,
+          "tshirt_1": 15,
+          "arms_2": 0,
+          "arms": 14
+        }
+      }
+    }
+  }
+]

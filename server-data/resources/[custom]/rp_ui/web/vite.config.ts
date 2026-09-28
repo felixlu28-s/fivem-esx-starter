@@ -7,5 +7,11 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        app: 'index.html',
+        loading: 'loading.html',
+      },
+    },
   },
 });
